@@ -1,7 +1,7 @@
 # Presentify documentation
 
-Public-facing documentation for the Presentify tutor app. Currently one
-deliverable: the **Presentify Tutor Handbook**, a single-page web guide
+Public-facing documentation for the Presentify educator app. Currently one
+deliverable: the **Presentify Educator Handbook**, a single-page web guide
 covering app version 2.3.
 
 ## Layout
