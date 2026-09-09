@@ -27,7 +27,7 @@
   --sans:"Source Sans 3", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --display:"Outfit", "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  --rail:15.5rem; --toc:12.5rem; --read:69ch;
+  --rail:15.5rem; --toc:12.5rem; --read:72ch; --shell:80rem;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark){
@@ -76,7 +76,7 @@ html{scroll-behavior:smooth}
 /* ============ top bar ============ */
 .topbar{
   position:sticky; top:0; z-index:60; display:flex; align-items:center; gap:.85rem;
-  padding:.6rem clamp(.75rem,2vw,1.5rem);
+  padding:.6rem max(clamp(.75rem,2vw,1.5rem), calc((100% - var(--shell)) / 2));
   background:color-mix(in oklab, var(--bg) 88%, transparent);
   backdrop-filter:blur(14px) saturate(1.3);
   border-bottom:1px solid var(--line);
@@ -134,7 +134,7 @@ html{scroll-behavior:smooth}
 .results mark{background:color-mix(in oklab, var(--accent) 35%, transparent); color:inherit; border-radius:3px}
 
 /* ============ shell ============ */
-.shell{display:grid; grid-template-columns:var(--rail) minmax(0,1fr) var(--toc); align-items:start; gap:0}
+.shell{display:grid; grid-template-columns:var(--rail) minmax(0,1fr) var(--toc); align-items:start; gap:0; max-width:var(--shell); margin-inline:auto}
 @media (max-width:1240px){ .shell{grid-template-columns:var(--rail) minmax(0,1fr)} .toc{display:none} }
 @media (max-width:1000px){ .shell{grid-template-columns:minmax(0,1fr)} }
 
@@ -186,7 +186,7 @@ html{scroll-behavior:smooth}
 
 /* ============ content ============ */
 main{padding:0 clamp(1rem,3.5vw,3rem) 7rem; min-width:0}
-.wrap{max-width:var(--read)}
+.wrap{max-width:var(--read); margin-inline:auto}
 section{scroll-margin-top:4.6rem}
 h1,h2,h3,h4{font-family:var(--display); text-wrap:balance; letter-spacing:-.015em; margin:0}
 h1{font-size:clamp(2.1rem,4.6vw,2.9rem); font-weight:700; line-height:1.08}
@@ -364,7 +364,7 @@ td kbd{font-size:.78em}
 h2:hover .h-anchor, h3:hover .h-anchor, .h-anchor:focus{opacity:1}
 
 /* hero */
-.hero{padding:3.4rem 0 .5rem; max-width:var(--read)}
+.hero{padding:3.4rem 0 .5rem; max-width:var(--read); margin-inline:auto}
 .eyebrow{font-family:var(--mono); font-size:.74rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin-bottom:.9rem}
 .hero p.lede{margin-top:1rem; font-size:1.14rem}
 .meta{display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.5rem}
@@ -401,7 +401,7 @@ details.q > summary:hover{background:var(--surface-2)}
 .log .v{font-family:var(--mono); font-size:.82rem; color:var(--accent); font-variant-numeric:tabular-nums}
 .log ul.b{gap:.28rem; font-size:.94rem}
 
-footer{border-top:1px solid var(--line); margin-top:4.5rem; padding-top:1.5rem; color:var(--muted); font-size:.88rem; max-width:var(--read)}
+footer{border-top:1px solid var(--line); margin-top:4.5rem; padding-top:1.5rem; color:var(--muted); font-size:.88rem; max-width:var(--read); margin-inline:auto}
 footer p + p{margin-top:.4rem}
 
 /* ============ print ============ */
