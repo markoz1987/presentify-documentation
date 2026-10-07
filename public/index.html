@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Presentify Educator Handbook - the complete user guide for the Presentify educator app, covering app version 2.3.">
+<meta name="description" content="Presentify Educator Handbook - the complete user guide for the Presentify educator app, covering app version 2.3.3.">
 <meta name="robots" content="index,follow">
 <style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Presentify Educator Handbook</title>
@@ -484,44 +484,46 @@ footer p + p{margin-top:.4rem}
       </ul></li>
     <li data-for="nav"><a href="#nav"><span class="n">02</span><span>Getting around</span></a>
       <ul class="sub">
-        <li><a href="#nav-bottom">The four tabs</a></li>
-        <li><a href="#nav-rail">Main filter rail</a></li>
+        <li><a href="#nav-bottom">The three tabs</a></li>
+        <li><a href="#nav-class">Inside an assignment</a></li>
       </ul></li>
     <li data-for="assignments"><a href="#assignments"><span class="n">03</span><span>Assignments</span></a>
       <ul class="sub">
         <li><a href="#assignments-screen">Assignments screen</a></li>
-        <li><a href="#assignments-sub">Substitute (SUB) flag</a></li>
+        <li><a href="#assignments-sub">Substitute (SUB) badge</a></li>
+        <li><a href="#assignments-flags">Reading the flags</a></li>
+        <li><a href="#assignments-showall">Show All and its filters</a></li>
       </ul></li>
-    <li data-for="filters"><a href="#filters"><span class="n">04</span><span>Filters</span></a></li>
-    <li data-for="sessions"><a href="#sessions"><span class="n">05</span><span>Sessions</span></a>
+    <li data-for="sessions"><a href="#sessions"><span class="n">04</span><span>Sessions</span></a>
       <ul class="sub">
-        <li><a href="#sessions-status">Four statuses</a></li>
+        <li><a href="#sessions-status">Open, Locked, Ended</a></li>
         <li><a href="#sessions-screen">Sessions screen</a></li>
-        <li><a href="#sessions-roster">Create: Student Roster</a></li>
-        <li><a href="#sessions-number">Create: Student Number</a></li>
+        <li><a href="#sessions-ended">An ended session</a></li>
+        <li><a href="#sessions-roster">Create: mark each student</a></li>
+        <li><a href="#sessions-number">Create: enter a number</a></li>
         <li><a href="#sessions-delete">Deleting a session</a></li>
       </ul></li>
-    <li data-for="attendance"><a href="#attendance"><span class="n">06</span><span>Attendance details</span></a></li>
-    <li data-for="reflections"><a href="#reflections"><span class="n">07</span><span>Session reflections</span></a>
+    <li data-for="attendance"><a href="#attendance"><span class="n">05</span><span>Attendance details</span></a></li>
+    <li data-for="reflections"><a href="#reflections"><span class="n">06</span><span>Session reflections</span></a>
       <ul class="sub">
         <li><a href="#reflections-add">Add a reflection</a></li>
         <li><a href="#reflections-edit">Edit or clear</a></li>
       </ul></li>
-    <li data-for="students"><a href="#students"><span class="n">08</span><span>Students</span></a></li>
-    <li data-for="profile"><a href="#profile"><span class="n">09</span><span>Student profile</span></a></li>
-    <li data-for="assessments"><a href="#assessments"><span class="n">10</span><span>Assessments</span></a></li>
-    <li data-for="surveys"><a href="#surveys"><span class="n">11</span><span>Surveys</span></a></li>
-    <li data-for="groups"><a href="#groups"><span class="n">12</span><span>Student groups</span></a>
+    <li data-for="students"><a href="#students"><span class="n">07</span><span>Students</span></a></li>
+    <li data-for="profile"><a href="#profile"><span class="n">08</span><span>Student profile</span></a></li>
+    <li data-for="assessments"><a href="#assessments"><span class="n">09</span><span>Assessments</span></a></li>
+    <li data-for="surveys"><a href="#surveys"><span class="n">10</span><span>Surveys</span></a></li>
+    <li data-for="groups"><a href="#groups"><span class="n">11</span><span>Student groups</span></a>
       <ul class="sub">
         <li><a href="#groups-new">Create a group</a></li>
         <li><a href="#groups-edit">Edit a group</a></li>
         <li><a href="#groups-delete">Delete a group</a></li>
         <li><a href="#groups-practice">Best practices</a></li>
       </ul></li>
-    <li data-for="inbox"><a href="#inbox"><span class="n">13</span><span>Inbox</span></a></li>
-    <li data-for="educator"><a href="#educator"><span class="n">14</span><span>Your profile &amp; settings</span></a></li>
-    <li data-for="smartie"><a href="#smartie"><span class="n">15</span><span>Smartie assistant</span></a></li>
-    <li data-for="support"><a href="#support"><span class="n">16</span><span>Support</span></a></li>
+    <li data-for="inbox"><a href="#inbox"><span class="n">12</span><span>Inbox</span></a></li>
+    <li data-for="educator"><a href="#educator"><span class="n">13</span><span>Your profile &amp; settings</span></a></li>
+    <li data-for="smartie"><a href="#smartie"><span class="n">14</span><span>Smartie assistant</span></a></li>
+    <li data-for="support"><a href="#support"><span class="n">15</span><span>Support</span></a></li>
   </ol>
   <div class="extra">
     <ol>
@@ -533,23 +535,27 @@ footer p + p{margin-top:.4rem}
 
 <main id="top">
   <div class="hero">
-    <p class="eyebrow">Presentify for educators &middot; version 2.3</p>
+    <p class="eyebrow">Presentify for educators &middot; version 2.3.3</p>
     <h1>The Presentify educator handbook</h1>
     <p class="lede">Presentify keeps an educator&rsquo;s teaching day in one place: the assignments you&rsquo;re scheduled for, the sessions you run, who was present and for how long, what you taught, and how each student is progressing. This handbook walks through every screen in the order you meet it.</p>
     <div class="meta">
       <span>Web &middot; iOS &middot; Android</span>
-      <span>Covers app version 2.3</span>
+      <span>Covers app version 2.3.3</span>
       <span>presentify.xyz</span>
     </div>
     <div class="quicklinks">
-      <a href="#sessions-roster"><b>Run a roster session</b><span>The five-step flow, start to 100%</span></a>
-      <a href="#sessions-status"><b>Why is my session locked?</b><span>The four statuses and the 24-hour rule</span></a>
-      <a href="#faq"><b>Frequently asked questions</b><span>Eleven answers to the usual snags</span></a>
+      <a href="#sessions-roster"><b>Run a session</b><span>From start to 100%</span></a>
+      <a href="#sessions-status"><b>Why is my session locked?</b><span>Open, Locked and Ended, and the 24-hour rule</span></a>
+      <a href="#faq"><b>Frequently asked questions</b><span>Twelve answers to the usual snags</span></a>
       <a href="#whatsnew"><b>What&rsquo;s new</b><span>Changes since the 2.1.9 guide</span></a>
     </div>
     <div class="note" style="margin-top:2.2rem">
       <svg aria-hidden="true"><use href="#i-info"/></svg>
       <div><b>A note on versions</b><p>The version in your app store may differ slightly from the one described here. Your app&rsquo;s version number is printed at the bottom of the <span class="ui">Login</span> screen and on your <span class="ui">Profile</span> screen &mdash; worth checking before reporting anything as a bug.</p></div>
+    </div>
+    <div class="note tip" style="margin-top:1rem">
+      <svg aria-hidden="true"><use href="#i-bulb"/></svg>
+      <div><b>Help on most screens</b><p>Most screens have a <span class="ui">?</span> button in the top-right corner of the title bar. It opens a short explanation of that screen. In Light appearance the button may be hard to see &mdash; tap the top-right corner anyway and the help still opens.</p></div>
     </div>
   </div>
 
@@ -559,6 +565,10 @@ footer p + p{margin-top:.4rem}
       <div class="ch-head"><span class="ch-num">01</span><span class="ch-rule"></span></div>
       <h2>Signing in</h2>
       <p class="lede">Your account is created by an administrator. You set your own password from the invitation email, then use it everywhere &mdash; web, iOS and Android share one login.</p>
+      <div class="note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <div><b>There is no sign-up screen</b><p>You can&rsquo;t create a Presentify account from inside the app. If you don&rsquo;t have your sign-in details yet, contact whoever set up Presentify for your program &mdash; usually your program or school coordinator.</p></div>
+      </div>
       <figure class="video" data-vid="1129864789" data-title="Signing in" data-dur="0:14">
         <button type="button" class="v-play" aria-label="Play the Signing in walkthrough, 14 seconds">
           <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
@@ -577,33 +587,40 @@ footer p + p{margin-top:.4rem}
       <p>An administrator sends you an invitation email with instructions for creating a password. Once that&rsquo;s done:</p>
       <ol class="s">
         <li>Enter the email address your Presentify account was created with.</li>
-        <li>Enter your password.</li>
-        <li>Press the green <span class="ui">Login</span> button.</li>
+        <li>Enter your password. To check what you typed, tap the eye icon at the right of the field; tap it again to hide it.</li>
+        <li>Tap <span class="ui">Login</span>, the wide button at the very bottom of the screen.</li>
       </ol>
       <p>If the credentials are correct you land on the <a href="#assignments">Assignments</a> screen.</p>
+      <h4 id="login-wrong">If your email or password is wrong</h4>
+      <p>You stay on the Login screen and nothing is lost. On a phone or tablet a banner reads <em>Login Error</em> and <em>Invalid credentials</em>. In a web browser you may get no message at all &mdash; the screen just stays as it is.</p>
+      <ol class="s">
+        <li>Wait a few seconds, in case your details are still being checked.</li>
+        <li>Check for typos, especially in your email address.</li>
+        <li>Tap <span class="ui">Login</span> again.</li>
+      </ol>
+      <p>Once you&rsquo;re signed in, you stay signed in: closing the app and opening it again takes you straight back to your assignments. You see the Login screen again only if you log out, if the app signs you out for inactivity, or if you haven&rsquo;t opened it in a very long time.</p>
       <div class="note warn">
         <svg aria-hidden="true"><use href="#i-warn"/></svg>
         <div><b>Remember me</b><p>Ticking <span class="ui">Remember me</span> keeps your email address filled in after you log out. Only use it on a device that is yours alone &mdash; never on a shared school computer.</p></div>
       </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Login screen&nbsp;&mdash; empty"><img src="img/p02_000.webp" alt="Presentify login screen with empty email and password fields" loading="lazy"></span><figcaption><b>Login</b> Email, password, Remember me.</figcaption></figure>
-        <figure><span class="shot" data-cap="Login screen&nbsp;&mdash; filled in"><img src="img/p02_001.webp" alt="Login screen with an email address and password entered" loading="lazy"></span><figcaption><b>Ready to sign in</b> The Login button activates once both fields are filled.</figcaption></figure>
+        <figure><span class="shot" data-cap="Login screen&nbsp;&mdash; ready to sign in"><img src="img/v233_signing-in-login-form.webp" alt="Login screen with an email address and password entered, Remember me ticked, and the Login button at the bottom" loading="lazy"></span><figcaption><b>Ready to sign in</b> Tap Login at the bottom of the screen.</figcaption></figure>
       </div>
 
       <h3 id="login-forgot">Forgot password</h3>
       <ol class="s">
         <li>On the Login screen, tap <span class="ui">Forgot Password?</span></li>
+        <li>The screen changes: the password field disappears, the button at the bottom now reads <span class="ui">Forgot Password</span>, and a <span class="ui">Back to Login</span> link takes you back if you change your mind.</li>
         <li>Enter the email address associated with your account.</li>
-        <li>Tap the green <span class="ui">Forgot Password</span> button. A confirmation appears: <em>Password reset link sent.</em></li>
+        <li>Tap <span class="ui">Forgot Password</span> at the bottom of the screen. On a phone or tablet a banner confirms: <em>Password reset link sent.</em> In a web browser you may see no confirmation at all, even though the link was sent &mdash; check your email rather than tapping the button again.</li>
         <li>The email with instructions arrives within a few minutes.</li>
       </ol>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>No email?</b><p>Check your Spam or Junk folder first. If it isn&rsquo;t there, wait a few minutes and request the reset again.</p></div>
+        <div><b>No email?</b><p>Check your Spam or Junk folder first. If nothing has arrived after a few minutes, make sure you typed the email address your account actually uses, then request the reset again &mdash; or contact whoever set up your account.</p></div>
       </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Forgot password"><img src="img/p03_004.webp" alt="Forgot password screen with an email field and Back to Login link" loading="lazy"></span><figcaption><b>Forgot password</b> Email only &mdash; no password field.</figcaption></figure>
-        <figure><span class="shot" data-cap="Reset link sent"><img src="img/p03_005.webp" alt="Success banner reading Password reset link sent" loading="lazy"></span><figcaption><b>Confirmation</b> The banner confirms the link was sent.</figcaption></figure>
+        <figure><span class="shot" data-cap="Forgot password"><img src="img/v233_signing-in-forgot-password.webp" alt="Login screen after tapping Forgot Password?, showing only the Email field and Back to Login, with the keyboard open" loading="lazy"></span><figcaption><b>Forgot password</b> Email only, with Back to Login. The keyboard may cover the button until you close it.</figcaption></figure>
       </div>
 
       <h3 id="login-help">Login Assistance</h3>
@@ -641,7 +658,7 @@ footer p + p{margin-top:.4rem}
       <ol class="s">
         <li>At 9 minutes, a <span class="ui">Session timeout warning</span> dialog appears.</li>
         <li>It counts down 60 seconds.</li>
-        <li>Tap <span class="ui">I&rsquo;m still here</span> &mdash; or interact with the app &mdash; and the timer resets.</li>
+        <li>Tap <span class="ui">I&rsquo;m still here</span>. The box closes and you stay signed in, on the same screen. Tapping anywhere else does not count.</li>
         <li>Ignore it and you are logged out at the 10-minute mark.</li>
       </ol>
       <div class="note warn">
@@ -649,7 +666,7 @@ footer p + p{margin-top:.4rem}
         <div><b>Unsaved work is not kept</b><p>Attendance details you typed but never saved are lost on logout. Save as you go rather than at the end of a long session.</p></div>
       </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Session timeout warning"><img src="img/p08_009.webp" alt="Session timeout warning with a 56 second countdown and an I'm still here button" loading="lazy"></span><figcaption><b>60-second countdown</b> Tap <em>I&rsquo;m still here</em> to stay signed in.</figcaption></figure>
+        <figure><span class="shot" data-cap="Session timeout warning"><img src="img/v233_signing-in-inactivity-warning.webp" alt="Session timeout warning over the Assignments screen, showing Time remaining: 28s and an I&rsquo;m still here button" loading="lazy"></span><figcaption><b>Less than a minute left</b> Tap <em>I&rsquo;m still here</em> to stay signed in.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -659,7 +676,7 @@ footer p + p{margin-top:.4rem}
     <div class="wrap">
       <div class="ch-head"><span class="ch-num">02</span><span class="ch-rule"></span></div>
       <h2>Getting around</h2>
-      <p class="lede">Presentify has two layers of navigation: four tabs along the bottom that switch between the main areas, and a rail of three buttons inside an assignment that switches what you&rsquo;re looking at.</p>
+      <p class="lede">Presentify has two layers of navigation: three tabs along the bottom of the screen that switch between the main areas, and, inside an assignment, a row of three tabs &mdash; <span class="ui">SESSIONS</span>, <span class="ui">STUDENTS</span> and <span class="ui">GROUPS</span> &mdash; that switches what you&rsquo;re looking at.</p>
       <figure class="video" data-vid="1129864824" data-title="Getting around" data-dur="0:29">
         <button type="button" class="v-play" aria-label="Play the Getting around walkthrough, 29 seconds">
           <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
@@ -674,30 +691,37 @@ footer p + p{margin-top:.4rem}
         <a class="v-link" href="https://vimeo.com/1129864824">vimeo.com/1129864824</a>
       </figure>
 
-      <h3 id="nav-bottom">The four tabs</h3>
+      <h3 id="nav-bottom">The three tabs</h3>
       <div class="tablewrap">
         <table>
           <thead><tr><th>Tab</th><th>What it opens</th></tr></thead>
           <tbody>
             <tr><td><strong>Assignments</strong></td><td>The default screen: every assignment you&rsquo;re scheduled for. <a href="#assignments">Chapter 03</a></td></tr>
-            <tr><td><strong>Filters</strong></td><td>The same data reached step by step &mdash; district, then school, then program. <a href="#filters">Chapter 04</a></td></tr>
-            <tr><td><strong>Inbox</strong></td><td>Messages sent to you, split into Unread and Read. <a href="#inbox">Chapter 13</a></td></tr>
-            <tr><td><strong>Profile</strong></td><td>Your own details, password, settings and logout. <a href="#educator">Chapter 14</a></td></tr>
+            <tr><td><strong>Inbox</strong></td><td>Messages sent to you, split into Unread and Read, with the number of unread messages shown on the tab. <a href="#inbox">Chapter 12</a></td></tr>
+            <tr><td><strong>Profile</strong></td><td>Your own details, password, settings and logout. <a href="#educator">Chapter 13</a></td></tr>
           </tbody>
         </table>
       </div>
 
-      <h3 id="nav-rail">The main filter rail</h3>
-      <p>Once an assignment is selected (or all three filters are set), three buttons appear above the content. They decide what the screen below shows:</p>
+      <h3 id="nav-class">Inside an assignment</h3>
+      <p>Open an assignment from the <span class="ui">Assignments</span> screen. Under its details is a row of three tabs, usually with <span class="ui">SESSIONS</span> already selected. They decide what the screen below shows:</p>
       <ul class="b">
-        <li><span class="ui">SESSIONS</span> &mdash; the sessions that match, and the <span class="ui">+</span> button that creates a new one.</li>
-        <li><span class="ui">STUDENTS</span> &mdash; every student at the filtered school, with search and Grade / Verified filters.</li>
-        <li><span class="ui">GROUPS</span> &mdash; the student groups you&rsquo;ve created for that school and program type.</li>
+        <li><span class="ui">SESSIONS</span> &mdash; the sessions for this assignment, sorted into <span class="ui">Open</span>, <span class="ui">Locked</span> and <span class="ui">Ended</span>, with a refresh button and the <span class="ui">+</span> button that creates a new one.</li>
+        <li><span class="ui">STUDENTS</span> &mdash; the students at the assignment&rsquo;s school, with search and the <span class="ui">Verified Status</span> and <span class="ui">Grades</span> filters.</li>
+        <li><span class="ui">GROUPS</span> &mdash; the student groups you&rsquo;ve created for that school and program type. Other educators don&rsquo;t see your groups.</li>
       </ul>
+      <div class="note tip">
+        <svg aria-hidden="true"><use href="#i-bulb"/></svg>
+        <div><b>Can&rsquo;t see GROUPS?</b><p>The row of tabs is wider than the screen, so <span class="ui">GROUPS</span> is cut off at the right edge, even at normal text size; at large text, <span class="ui">STUDENTS</span> can be too. Put your finger on the row and swipe left to bring it into view.</p></div>
+      </div>
+      <div class="note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <div><b>&ldquo;This view is not supported&rdquo;</b><p>Depending on your program, <span class="ui">STUDENTS</span> and <span class="ui">GROUPS</span> may read <em>This view is not supported for the selected options.</em> That&rsquo;s expected where you record how many students attended rather than each student by name. If an assignment ever opens on that message, tap <span class="ui">SESSIONS</span>.</p></div>
+      </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="SESSIONS view"><img src="img/p09_010.webp" alt="Sessions list inside an assignment showing completion percentages and statuses" loading="lazy"></span><figcaption><b>SESSIONS</b> Completion bar and status on every card.</figcaption></figure>
-        <figure><span class="shot" data-cap="STUDENTS view"><img src="img/p09_011.webp" alt="Students list with search field and Verified Status and Grades filters" loading="lazy"></span><figcaption><b>STUDENTS</b> Search plus Verified Status and Grades filters.</figcaption></figure>
-        <figure><span class="shot" data-cap="GROUPS view"><img src="img/p09_012.webp" alt="Student groups list with a Create new student group action" loading="lazy"></span><figcaption><b>GROUPS</b> Your groups for this school and program type.</figcaption></figure>
+        <figure><span class="shot" data-cap="SESSIONS view"><img src="img/v233_finishing-a-session-ended-badge-roster.webp" alt="SESSIONS tab inside an assignment, with Open, Locked and Ended counts and one ended session card at 100% complete" loading="lazy"></span><figcaption><b>SESSIONS</b> Open, Locked and Ended, with a completion bar and status on every card.</figcaption></figure>
+        <figure><span class="shot" data-cap="STUDENTS view"><img src="img/v233_students-and-groups-students-tab.webp" alt="STUDENTS tab with add and sort buttons, a search field, Verified Status and Grades filters, and a list of students" loading="lazy"></span><figcaption><b>STUDENTS</b> Search plus Verified Status and Grades filters.</figcaption></figure>
+        <figure><span class="shot" data-cap="GROUPS view"><img src="img/v233_students-and-groups-groups-tab.webp" alt="GROUPS tab with a Create new student group row and two group cards" loading="lazy"></span><figcaption><b>GROUPS</b> Your groups for this school and program type.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -721,180 +745,214 @@ footer p + p{margin-top:.4rem}
         </div>
         <a class="v-link" href="https://vimeo.com/1129864635">vimeo.com/1129864635</a>
       </figure>
-      <p>Assignments also work as filters: selecting one narrows the sessions, students and groups you see to that school and program.</p>
+      <p>An assignment is also your way in: opening one shows the sessions, students and groups for that assignment&rsquo;s school and program.</p>
       <ul class="b">
-        <li>By default the list shows the <strong>7 assignments closest to today</strong>. Tap <span class="ui">Show All</span> for the rest.</li>
-        <li>Tap the arrow on a card to expand it and see the district, program and program types.</li>
-        <li>Tap the refresh icon at the top left to reload the list.</li>
+        <li>The list opens on the assignments around today, with the <strong>oldest at the top</strong> &mdash; scroll down to reach today. Tap <span class="ui">Show All</span> for your complete list; the button then reads <span class="ui">Show Less</span> and takes you back.</li>
+        <li>Tap the arrow on a card to expand it and see the district, program and program types. The program name is shown only here, so if several cards look the same, open each one and read the <strong>Program</strong> line.</li>
+        <li>To reload the list, tap the refresh button at the top left, or pull down on the list and let go. Refreshing keeps you on <span class="ui">Show All</span> or <span class="ui">Show Less</span>, whichever you were viewing.</li>
       </ul>
+      <p>Each card shows the school name at the top, the date with its weekday &mdash; for example <span class="ui">OCT-07-2026 (WED)</span> &mdash; and the time range. A flag in the bottom-left corner says where the assignment stands; for one that is over, a counter in the bottom-right corner shows how many of its sessions are completed.</p>
+      <p>The <span class="ui">?</span> in the top-right corner opens <span class="ui">Assignments Overview</span>; tap <span class="ui">Close</span> to go back.</p>
+      <div class="note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <div><b>Getting back here</b><p>Tap the <span class="ui">Assignments</span> tab at the bottom of the screen, or the back arrow at the top left of an assignment you opened. On the Assignments screen itself, your device&rsquo;s back button and your browser&rsquo;s back button do nothing &mdash; use the tabs at the bottom instead.</p></div>
+      </div>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
         <div><b>Progressive loading</b> <span class="tag new">New in 2.2.13</span><p>Long assignment lists now load in batches as you scroll instead of making you wait for the whole list.</p></div>
       </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Assignments list"><img src="img/p11_015.webp" alt="Assignments list showing four dated assignment cards, one flagged SUB" loading="lazy"></span><figcaption><b>Assignments</b> Nearest seven, newest first.</figcaption></figure>
-        <figure><span class="shot" data-cap="Expanded assignment card"><img src="img/p11_016.webp" alt="Expanded assignment card showing district, program and program types" loading="lazy"></span><figcaption><b>Expanded card</b> District, program, program types.</figcaption></figure>
+        <figure><span class="shot" data-cap="Assignments list"><img src="img/v233_finding-your-classes-list-overview.webp" alt="Assignments screen with a refresh button, Oldest and Show All above a list of assignment cards, each with a status flag" loading="lazy"></span><figcaption><b>Assignments</b> Oldest first &mdash; scroll down for today.</figcaption></figure>
+        <figure><span class="shot" data-cap="Expanded assignment card"><img src="img/v233_finding-your-classes-card-expanded.webp" alt="Assignment card opened with its arrow, showing District, Program and Program Types above the date" loading="lazy"></span><figcaption><b>Expanded card</b> District, program, program types.</figcaption></figure>
       </div>
 
       <h3 id="assignments-screen">The assignments screen</h3>
-      <p>Selecting an assignment applies its filters and opens the main view, which contains:</p>
+      <p>Tap anywhere on a card except the arrow to open the assignment. Its short code is at the top of the screen &mdash; for example <span class="ui">ASSIGNMENT: TM-AY2403-U</span> &mdash; and below it you find:</p>
       <ul class="b">
         <li>the selected assignment&rsquo;s information at the top;</li>
-        <li><strong>Program Type</strong> &mdash; auto-selected when only one is available, otherwise you must choose one before the filter rail activates;</li>
-        <li>the <a href="#nav-rail">main filter rail</a>: SESSIONS, STUDENTS, GROUPS;</li>
-        <li>the view for whichever rail button is active.</li>
+        <li><strong>Program Type</strong> &mdash; auto-selected when only one is available, otherwise you must choose one before the row of tabs activates;</li>
+        <li>the row of three tabs &mdash; <a href="#nav-class">SESSIONS, STUDENTS, GROUPS</a>;</li>
+        <li>the view for whichever tab is selected.</li>
       </ul>
 
-      <h3 id="assignments-sub">The substitute (SUB) flag</h3>
-      <p>You may be assigned to cover for an absent educator. Those assignments carry a <span class="ui">SUB</span> flag &mdash; tap it to see the name and ID of the educator you&rsquo;re covering for.</p>
+      <h3 id="assignments-sub">The substitute (SUB) badge</h3>
+      <p>A <span class="ui">SUB</span> badge means a substitute has been assigned to cover that assignment. Tap the badge to see the substitute&rsquo;s name and code &mdash; the box is titled <span class="ui">Absent Educator</span>; tap <span class="ui">Close</span> to put it away.</p>
+
+      <h3 id="assignments-flags">Reading the flags</h3>
+      <p>The word on the flag tells you where the assignment stands. The card&rsquo;s border matches it, but go by the word:</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Flag</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td><span class="ui">UPCOMING</span></td><td>Hasn&rsquo;t started yet.</td></tr>
+            <tr><td><span class="ui">IN PROGRESS</span></td><td>Happening now.</td></tr>
+            <tr><td><span class="ui">COMPLETED</span></td><td>Over, and every session in it has been completed.</td></tr>
+            <tr><td><span class="ui">INCOMPLETE</span></td><td>Over, and not every session has been completed &mdash; or none was recorded.</td></tr>
+            <tr><td><span class="ui">PAST</span></td><td>Over, and the app doesn&rsquo;t have the session numbers to say.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The counter on a finished assignment reads like <span class="ui">2/3</span>: two of three sessions completed. <span class="ui">0/0</span> means no session was recorded. A <span class="ui">PAST</span> card has no counter &mdash; that does not mean zero sessions were completed.</p>
       <div class="strip">
-        <figure><span class="shot" data-cap="Absent Educator dialog"><img src="img/p12_019.webp" alt="Absent Educator dialog showing the covered educator's name and ID" loading="lazy"></span><figcaption><b>Absent Educator</b> Who you&rsquo;re standing in for.</figcaption></figure>
+        <figure><span class="shot" data-cap="Status flags"><img src="img/v233_finding-your-classes-status-flags.webp" alt="Assignments screen with a list of assignment cards, each with an IN PROGRESS flag at its bottom-left corner" loading="lazy"></span><figcaption><b>Flags</b> The word on the flag is what counts.</figcaption></figure>
+      </div>
+
+      <h3 id="assignments-showall">Show All and its filters</h3>
+      <p>The filters appear only after you tap <span class="ui">Show All</span>:</p>
+      <ul class="b">
+        <li><strong>Time filter</strong> (left) &mdash; <span class="ui">All</span>, <span class="ui">Upcoming</span>, <span class="ui">In Progress</span>, <span class="ui">Past due</span>, sometimes <span class="ui">Unknown</span>. Each option shows a count, like <span class="ui">Past due &middot; 2</span>.</li>
+        <li><strong>Completion filter</strong> (right) &mdash; locked with a padlock, reading <span class="ui">All past</span>, until you choose <span class="ui">Past due</span>. Then choose <span class="ui">All past</span>, <span class="ui">Complete</span>, <span class="ui">Incomplete</span> or <span class="ui">No data</span>.</li>
+        <li><strong>Sort</strong> &mdash; the button beside <span class="ui">Show Less</span> switches between <span class="ui">Newest</span> and <span class="ui">Oldest</span>. On the shorter opening list it only shows the current order.</li>
+      </ul>
+      <p>An empty list says why, matching the filter you chose &mdash; for example <em>No past due assignments.</em> or <em>No assignments without session data.</em> (for <span class="ui">No data</span>). <em>Unable to load assignments</em> means something went wrong while fetching the list, and <em>Still loading assignments&hellip;</em> means it&rsquo;s on its way; refresh the list if you see either.</p>
+      <div class="strip">
+        <figure><span class="shot" data-cap="Show All filters"><img src="img/v233_finding-your-classes-filters.webp" alt="Assignments screen after Show All, with Newest and Show Less buttons, a Time filter reading All 11 and a locked Completion filter reading All past 2, above upcoming and in progress cards" loading="lazy"></span><figcaption><b>Show All</b> Time filter at left, Completion filter at right.</figcaption></figure>
+        <figure><span class="shot" data-cap="Empty list"><img src="img/v233_finding-your-classes-empty-state.webp" alt="Assignments screen with Past due 2 and Complete 0 selected and the message No complete assignments." loading="lazy"></span><figcaption><b>Empty list</b> The message names the filter you chose.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 04 FILTERS ============================ -->
-  <section class="chapter" id="filters">
-    <div class="wrap">
-      <div class="ch-head"><span class="ch-num">04</span><span class="ch-rule"></span></div>
-      <h2>Filters</h2>
-      <p class="lede">The Filters tab reaches the same sessions, students and groups as an assignment, but you choose the path yourself: district, then school, then partner / program / program type.</p>
-      <figure class="video" data-vid="1129864715" data-title="Filters" data-dur="0:15">
-        <button type="button" class="v-play" aria-label="Play the Filters walkthrough, 15 seconds">
-          <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
-          <span class="v-meta"><b>Watch: Filters</b><em>Video walkthrough &middot; 0:15</em></span>
-        </button>
-        <div class="v-fallback">
-          <span class="v-ring" aria-hidden="true"><svg><use href="#i-ext"/></svg></span>
-          <span class="v-meta"><b>Filters walkthrough</b><em>Plays on Vimeo &middot; 0:15</em></span>
-          <span class="sp" style="flex:1"></span>
-          <a href="https://vimeo.com/1129864715" target="_blank" rel="noopener">Open&nbsp;&rarr;</a>
-        </div>
-        <a class="v-link" href="https://vimeo.com/1129864715">vimeo.com/1129864715</a>
-      </figure>
-      <ol class="s">
-        <li>Tap a filter button to open its list &mdash; <span class="ui">District</span>, <span class="ui">School</span>, or <span class="ui">Program</span>.</li>
-        <li>Pick a value. The lists narrow as you go: schools are limited to the chosen district, programs to the chosen school.</li>
-        <li>When all three are set the buttons turn green and the main filter rail becomes usable.</li>
-      </ol>
-      <div class="note tip">
-        <svg aria-hidden="true"><use href="#i-bulb"/></svg>
-        <div><b>Clearing one filter</b><p>Long-press a filter button to clear that category on its own &mdash; no need to start over.</p></div>
-      </div>
-      <div class="strip">
-        <figure><span class="shot" data-cap="Filters &mdash; nothing selected"><img src="img/p13_020.webp" alt="Filters screen with District, School and Program buttons and a prompt to select all three" loading="lazy"></span><figcaption><b>Start here</b> All three are required.</figcaption></figure>
-        <figure><span class="shot" data-cap="Districts list"><img src="img/p14_023.webp" alt="Districts picker listing school districts" loading="lazy"></span><figcaption><b>District</b> First step.</figcaption></figure>
-        <figure><span class="shot" data-cap="Schools list"><img src="img/p14_024.webp" alt="Schools picker showing schools in the chosen district" loading="lazy"></span><figcaption><b>School</b> Limited to that district.</figcaption></figure>
-        <figure><span class="shot" data-cap="Programs list"><img src="img/p14_025.webp" alt="Programs picker listing partner, program and program type combinations" loading="lazy"></span><figcaption><b>Program</b> Partner / program / program type.</figcaption></figure>
-        <figure><span class="shot" data-cap="All three set"><img src="img/p15_026.webp" alt="Filters screen with all filters active and a list of sessions below" loading="lazy"></span><figcaption><b>Active</b> Green buttons, sessions below.</figcaption></figure>
-        <figure><span class="shot" data-cap="Incomplete selection"><img src="img/p16_027.webp" alt="Filters screen reminding the user that district, school and program type must be selected" loading="lazy"></span><figcaption><b>Reminder</b> Nothing loads until all three are chosen.</figcaption></figure>
-      </div>
-    </div>
-  </section>
-  <!-- ============================ 05 SESSIONS ============================ -->
+  <!-- ============================ 04 SESSIONS ============================ -->
   <section class="chapter" id="sessions">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">05</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">04</span><span class="ch-rule"></span></div>
       <h2>Sessions</h2>
       <p class="lede">A session is one block of teaching time: who taught, at which school, which students were there, for how long, and on what subject. Everything else in Presentify hangs off it.</p>
-      <p>You reach sessions two ways &mdash; from the <a href="#assignments">Assignments</a> screen by tapping an assignment, or from the <a href="#filters">Filters</a> screen by setting all three filters.</p>
+      <p>You reach sessions from the <a href="#assignments">Assignments</a> screen: tap an assignment, and its <span class="ui">SESSIONS</span> tab opens. The <span class="ui">STUDENTS</span> and <span class="ui">GROUPS</span> tabs sit beside it.</p>
+      <p>If the tabs look different from what you expect, see <a href="#nav-class">Inside an assignment</a>.</p>
 
-      <h3 id="sessions-status">The four statuses</h3>
-      <p>A session moves through these states. Which one it&rsquo;s in decides what you can still change.</p>
+      <h3 id="sessions-status">Open, Locked and Ended</h3>
+      <p>Once an assignment has at least one session, the sessions list has three tabs: <span class="ui">Open</span>, <span class="ui">Locked</span> and <span class="ui">Ended</span>, each with a count. It always opens on <span class="ui">Open</span>. Which tab a session is in decides what you can still change.</p>
       <div class="statuses">
-        <div><span class="chip started">Started</span><p>The initial state. The <strong>time cannot be changed</strong>, but other information can be edited for the next 24 hours.</p></div>
-        <div><span class="chip opened">Opened</span><p>A started session with attendance saved. Each present student needs both an <strong>attendance duration</strong> and a <strong>subject</strong> to count as complete; when every present student is complete, the session reads <strong>COMPLETED: 100%</strong>.</p></div>
-        <div><span class="chip locked">Locked</span><p>Not finished within 24 hours &mdash; a session sitting at 90% at the deadline locks at 90%. It can no longer be edited.</p></div>
-        <div><span class="chip ended">Ended</span><p>Completed 100% and locked. The finished state.</p></div>
+        <div><span class="chip opened">Open</span><p>A new session starts here and stays open for about 24 hours &mdash; not the length you chose: a 45-minute session doesn&rsquo;t close after 45 minutes. Its card counts down, for example <span class="ui">OPEN: 23:47:12</span> (hours : minutes : seconds). While it&rsquo;s open you can fill in and change everything. What a student needs before they count as complete depends on your program &mdash; often a time, a subject or a teacher, and a reason for each absent student. When everything is in, the card reads <strong>COMPLETED: 100%</strong>.</p></div>
+        <div><span class="chip locked">Locked</span><p>Not finished within about 24 hours &mdash; a session sitting at 90% at the deadline locks at 90%. It can no longer be edited.</p></div>
+        <div><span class="chip ended">Ended</span><p>Completed 100% and closed. The finished state.</p></div>
       </div>
+      <p>A session moves on its own when its time runs out, whether or not you&rsquo;re in the app. If one seems to have disappeared, tap <span class="ui">Ended</span> or <span class="ui">Locked</span>. If it closed before you finished, ask whoever manages Presentify for your program to reopen it &mdash; you can&rsquo;t reopen it yourself.</p>
       <div class="note warn">
         <svg aria-hidden="true"><use href="#i-warn"/></svg>
-        <div><b>The 24-hour rule is the one to remember</b><p>Marking a student present is not enough. Without duration and subject saved, that student never counts toward completion &mdash; and once 24 hours pass the session locks with whatever you entered. Finish attendance the same day.</p></div>
+        <div><b>The 24-hour rule is the one to remember</b><p>Switching a student on doesn&rsquo;t save anything by itself, and a present student only counts once everything your program asks for is saved. About 24 hours after a session starts it closes with whatever you entered &mdash; complete sessions go to <span class="ui">Ended</span>, the rest to <span class="ui">Locked</span>. Finish attendance the same day.</p></div>
       </div>
 
       <h3 id="sessions-screen">The sessions screen</h3>
-      <p>Every session you created for the current assignment or filter, newest first. Each card shows the date and time range, how many students were present, the session code, a completion bar and the status.</p>
+      <p>Every session for this assignment. Each card shows the date and time range, how many students were present, the session code, a completion bar and the status. If your program counts students instead of naming them, the card shows just the number you entered.</p>
       <ul class="b">
         <li><strong>Status tabs</strong> <span class="tag new">New</span> &mdash; <span class="ui">Open</span>, <span class="ui">Locked</span> and <span class="ui">Ended</span> tabs with counts, so you can jump straight to the sessions that still need work.</li>
-        <li><strong>Refresh</strong> &mdash; scroll down from the top of the list until the refresh icon appears, and keep pulling until it stops moving.</li>
+        <li><strong>Refresh</strong> &mdash; tap the refresh button (two circling arrows) beside <span class="ui">+</span>. If a list has no such button, leave the screen with the back arrow and open it again.</li>
         <li><strong>Create</strong> &mdash; the <span class="ui">+</span> button, top right.</li>
       </ul>
       <div class="strip">
-        <figure><span class="shot" data-cap="Sessions &mdash; status tabs"><img src="img/p22_040.webp" alt="Sessions list with Open, Locked and Ended tabs and a session card showing its lock deadline" loading="lazy"></span><figcaption><b>Open / Locked / Ended</b> Counts per tab, and the exact lock time on the card.</figcaption></figure>
-        <figure><span class="shot" data-cap="No sessions yet"><img src="img/p18_028.webp" alt="Empty sessions state inviting the user to tap plus to create a session" loading="lazy"></span><figcaption><b>Empty state</b> Tap <em>+</em> to create your first session.</figcaption></figure>
+        <figure><span class="shot" data-cap="Sessions&nbsp;&mdash; status tabs"><img src="img/v233_finishing-a-session-ended-badge.webp" alt="Sessions list on the Ended tab, with Open, Locked and Ended counts and one card showing the number of students, COMPLETED: 100% and ENDED" loading="lazy"></span><figcaption><b>Open / Locked / Ended</b> Counts per tab; each card shows its status.</figcaption></figure>
+        <figure><span class="shot" data-cap="No sessions yet"><img src="img/v233_starting-a-session-sessions-tab.webp" alt="Empty sessions tab with refresh and plus buttons and a note saying there are no sessions yet" loading="lazy"></span><figcaption><b>Empty state</b> Tap <em>+</em> to create your first session.</figcaption></figure>
       </div>
 
-      <h3 id="sessions-roster">Creating a session &mdash; Student Roster type</h3>
-      <p>Roster sessions track named students, so they always start from a group.</p>
+      <h3 id="sessions-ended">Looking at an ended session</h3>
+      <p>You can open an ended or locked session to look at it, but nothing can be changed: the switches don&rsquo;t move and there&rsquo;s no <span class="ui">Save Attendance Details</span> button. When you come back, the list is on <span class="ui">Open</span> again &mdash; tap <span class="ui">Ended</span> to return to it.</p>
+      <div class="strip">
+        <figure><span class="shot" data-cap="Ended session&nbsp;&mdash; read only"><img src="img/v233_finishing-a-session-read-only.webp" alt="Read-only view of an ended session showing Teacher, Number of Students, Grades and Subjects, with no Save button" loading="lazy"></span><figcaption><b>Ended</b> Details can be looked at, not changed.</figcaption></figure>
+      </div>
+
+      <h3 id="sessions-roster">Creating a session &mdash; if you mark each student</h3>
+      <p>If you mark each student present or absent, you start by choosing who is in the session &mdash; a saved group, or students picked one by one.</p>
       <ol class="s">
-        <li><strong>Select a student group.</strong> A group is required. If you don&rsquo;t have one yet, tap <span class="ui">Add Student</span> and follow <a href="#groups">Chapter 12</a>.</li>
-        <li><strong>Select date &amp; time.</strong> The assignment&rsquo;s available time range is shown above; pick a start and end time inside it, then tap <span class="ui">Start</span>. This creates an empty session with every student marked absent.</li>
-        <li><strong>Set each student&rsquo;s attendance.</strong> Toggle the switch on for the students who attended, then tap <span class="ui">Save Attendance Details</span>.</li>
-        <li><strong>Fill in the details.</strong> Tap a present student&rsquo;s card to add duration, subject and anything else &mdash; see <a href="#attendance">Chapter 06</a>.</li>
+        <li><strong>Choose your students.</strong> On <span class="ui">SELECT STUDENT GROUP</span>, tap a group that has students in it. To pick students one by one instead, tap <span class="ui">Continue Without a Group</span>, tick the students, then tap <span class="ui">Apply Changes</span> (the number shows how many you ticked). If you have no groups yet, tap <span class="ui">Check Groups page</span> to make one &mdash; see <a href="#groups">Chapter 11</a>. Tapping a group with no students in it does nothing; pick another group.</li>
+        <li><strong>Set the time.</strong> The <span class="ui">CREATE SESSION</span> screen shows the <span class="ui">AVAILABLE TIME RANGE</span>. <span class="ui">Start Time</span> is already filled in. Tap a <span class="ui">Quick Durations</span> button (<span class="ui">30 min</span>, <span class="ui">45 min</span>, <span class="ui">60 min</span>) to set the end in one tap &mdash; a button is grayed out if that length would run past the end of the class period. For any other length, tap <span class="ui">End Time</span>, choose a time from the list and tap <span class="ui">Confirm Selection</span>. The <span class="ui">Duration</span> line confirms it.</li>
+        <li><strong>Fill in anything else the screen asks for.</strong> Depending on your program, the screen also asks for a subject, a topic, a teacher, <span class="ui">Student Engagement</span>, or a <span class="ui">Session Reflection</span> box for each grade. <span class="ui">Start</span> stays grayed out until everything required has a value &mdash; including a teacher, even where nothing marks it as required.</li>
+        <li><strong>Tap Start.</strong> This creates a session with every student marked absent.</li>
+        <li><strong>Set each student&rsquo;s attendance.</strong> Toggle the switch on for the students who attended &mdash; the knob moves to the right and the present count goes up by one &mdash; then tap <span class="ui">Save Attendance Details</span>.</li>
+        <li><strong>Give a reason for each absent student.</strong> Most programs need one before the list can be saved; the line above the list reads <em>To save, add a Reason for:</em> and their names. Tap the absent student&rsquo;s row, tap <span class="ui">Select reason for absence</span>, pick a reason (or <span class="ui">Other</span> to type one), then tap <span class="ui">Save Attendance Details</span>.</li>
+        <li><strong>Fill in the details.</strong> Tap a present student&rsquo;s card to add duration, subject and anything else &mdash; see <a href="#attendance">Chapter 05</a>. Save the list first &mdash; with unsaved changes the app says <em>Please save attendance details first.</em></li>
       </ol>
       <div class="strip wide">
-        <figure><span class="shot" data-cap="Step 1 &mdash; select student group"><img src="img/p19_029.webp" alt="Select Student Group screen listing one group" loading="lazy"></span><figcaption><b>Step 1</b> Choose the group.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 2 &mdash; available time range"><img src="img/p19_030.webp" alt="Available time range with a Select Session Duration card showing start and end time" loading="lazy"></span><figcaption><b>Step 2</b> The window you may book inside.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 2 &mdash; start time picker"><img src="img/p19_031.webp" alt="Clock-style time picker set to 11:30 AM" loading="lazy"></span><figcaption><b>Start time</b> Tap the field, then the clock.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 2 &mdash; start time set"><img src="img/p19_032.webp" alt="Session duration card showing a start time of 11:30 AM and end time of 2:00 PM" loading="lazy"></span><figcaption><b>Start set</b> Now the end time.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 2 &mdash; end time picker"><img src="img/p20_033.webp" alt="Clock-style time picker set to 1:15 PM" loading="lazy"></span><figcaption><b>End time</b> Must stay inside the range.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 2 &mdash; ready to start"><img src="img/p20_034.webp" alt="Session duration card set from 11:30 AM to 1:15 PM with a Start button" loading="lazy"></span><figcaption><b>Start</b> Creates the empty session.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 3 &mdash; everyone absent"><img src="img/p20_035.webp" alt="New session with all students toggled off and 0 of 0 present" loading="lazy"></span><figcaption><b>Step 3</b> Everyone starts absent.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 3 &mdash; attendance saved"><img src="img/p20_036.webp" alt="Session with two students toggled present and check marks beside their cards" loading="lazy"></span><figcaption><b>Toggled present</b> Then <em>Save Attendance Details</em>.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 4 &mdash; 50% complete"><img src="img/p22_039.webp" alt="Session at 50 percent completion with one student framed in green" loading="lazy"></span><figcaption><b>Step 4</b> A green frame = that student is done.</figcaption></figure>
+        <figure><span class="shot" data-cap="Step 1&nbsp;&mdash; select student group"><img src="img/v233_starting-a-session-select-group.webp" alt="Select Student Group screen with a Continue Without a Group button above two groups, Debate Club and Reading Group" loading="lazy"></span><figcaption><b>Step 1</b> Choose a group, or Continue Without a Group.</figcaption></figure>
+        <figure><span class="shot" data-cap="Step 2&nbsp;&mdash; set the time"><img src="img/v233_starting-a-session-create-screen.webp" alt="Create Session screen with the available time range, Start Time 10:00 AM, End Time 11:00 AM, Quick Durations, a subject and a Session Reflection box for Grade 4" loading="lazy"></span><figcaption><b>Step 2</b> Set the time; depending on your program, more fields follow.</figcaption></figure>
+        <figure><span class="shot" data-cap="Step 3&nbsp;&mdash; add grade"><img src="img/v233_starting-a-session-add-grade-reflection.webp" alt="Create Session with two grade boxes, Grade 4 and Grade 5, each with Select focus standards, and Student Engagement set to Engaged" loading="lazy"></span><figcaption><b>Step 3</b> Depending on your program, one Session Reflection box per grade.</figcaption></figure>
+        <figure><span class="shot" data-cap="Step 5 &mdash; everyone absent"><img src="img/p20_035.webp" alt="New session with all students toggled off and 0 of 0 present" loading="lazy"></span><figcaption><b>Step 5</b> Everyone starts absent.</figcaption></figure>
+        <figure><span class="shot" data-cap="Attendance marked"><img src="img/v233_taking-attendance-student-list.webp" alt="A session&rsquo;s student list with three students switched on, two switched off, and the line To save, add a Reason for: Ella Carter" loading="lazy"></span><figcaption><b>Marked</b> Knob right = present; then <em>Save Attendance Details</em>.</figcaption></figure>
+        <figure><span class="shot" data-cap="Step 7 &mdash; 50% complete"><img src="img/p22_039.webp" alt="Session at 50 percent completion with one student&rsquo;s row outlined" loading="lazy"></span><figcaption><b>Step 7</b> A present student whose time has been saved gets an outline around their row; the line above the list names anyone still missing details.</figcaption></figure>
       </div>
-      <h4>Two controls worth knowing</h4>
+      <div class="strip">
+        <figure><span class="shot" data-cap="Giving a reason for absence"><img src="img/v233_taking-attendance-absence-reason.webp" alt="Attendance Details for Emma Johnson with a Select reason for absence list open, showing Students Forgot / Confused, Scheduling Conflict, Tech / Connectivity Issues and Other" loading="lazy"></span><figcaption><b>Reason</b> Pick a reason, or Other to type one.</figcaption></figure>
+        <figure><span class="shot" data-cap="Reason still needed"><img src="img/v233_taking-attendance-save-bar.webp" alt="Student list with an Info banner reading 1 absent student still needs a Reason, and the line To save, add a Reason for Ella Carter" loading="lazy"></span><figcaption><b>Before you can save</b> The banner and the line above the list name who still needs a reason.</figcaption></figure>
+      </div>
+      <div class="note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <div><b>Messages you may see when you tap Start</b>
+          <ul class="b">
+            <li>Depending on your program, a question may appear first: <em>No session reflection added&hellip;</em> (<span class="ui">Continue</span> or <span class="ui">Cancel</span>), or a warning that topics can&rsquo;t be edited later (<span class="ui">Save anyway</span> or <span class="ui">Cancel</span>).</li>
+            <li><strong>Session Overlap Detected</strong> &mdash; the time overlaps a session that already exists. Nothing is created and your times stay filled in; change the time and tap <span class="ui">Start</span> again.</li>
+            <li><em>This assignment has no scheduled time&hellip;</em> &mdash; <span class="ui">Start</span> will never become available. Report it to your administrator.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="strip">
+        <figure><span class="shot" data-cap="Session Overlap Detected"><img src="img/v233_starting-a-session-overlap-banner.webp" alt="Create Session screen with a Session Overlap Detected banner at the top saying the selected time overlaps an existing session, and the time fields still filled in" loading="lazy"></span><figcaption><b>Overlap</b> Nothing is created; change the time and tap Start again.</figcaption></figure>
+      </div>
+      <h4>Four controls worth knowing</h4>
       <ul class="b">
-        <li><strong>Eye icon</strong> &mdash; shows or hides absent students, handy for a long roster where only a few attended.</li>
+        <li><strong>Eye icon</strong> &mdash; shows or hides absent students, handy for a long list where only a few attended. <strong>After every save</strong>, the list shows only present students and the eye is crossed out. Nothing was lost &mdash; tap the eye and the absent students come back, still marked absent.</li>
         <li><strong>Add Student</strong> &mdash; adds someone who wasn&rsquo;t in the original group, for this session only.</li>
+        <li><strong>Mark everyone present</strong> &mdash; the switch at the right end of the row above the list. It&rsquo;s there only until your first save of the session.</li>
+        <li><strong>Attendance Defaults</strong> &mdash; in some programs, a panel above the list sets values like time or subject once for every student who doesn&rsquo;t already have their own. Values you set by hand are left alone.</li>
       </ul>
       <div class="strip">
-        <figure><span class="shot" data-cap="Absent students hidden"><img src="img/p21_037.webp" alt="Session list with the eye icon active so absent students are hidden" loading="lazy"></span><figcaption><b>Eye on</b> Absent students hidden.</figcaption></figure>
-        <figure><span class="shot" data-cap="Absent students shown"><img src="img/p21_038.webp" alt="Session list showing both present and absent students" loading="lazy"></span><figcaption><b>Eye off</b> The whole roster.</figcaption></figure>
+        <figure><span class="shot" data-cap="Absent students hidden"><img src="img/p21_037.webp" alt="Session list with a crossed-out eye icon, so absent students are hidden" loading="lazy"></span><figcaption><b>Eye crossed out</b> Absent students hidden.</figcaption></figure>
+        <figure><span class="shot" data-cap="Absent students shown"><img src="img/v233_troubleshooting-eye-toggle.webp" alt="Student list with the plain eye icon and two absent students, Ella Carter and Emma Johnson, showing at the bottom" loading="lazy"></span><figcaption><b>Plain eye</b> Everyone in the session, absent students included.</figcaption></figure>
       </div>
       <div class="note tip">
         <svg aria-hidden="true"><use href="#i-bulb"/></svg>
-        <div><b>Reading the completion line</b><p>The banner under the progress bar names exactly who is still missing data &mdash; &ldquo;In order to complete this session, you need to enter session details for: Stan Gold&rdquo;. When it turns green, you&rsquo;re done.</p></div>
+        <div><b>Reading the completion line</b><p>The line under the progress bar tells you what&rsquo;s left: <em>In order to complete this session, you need to enter session details for:</em> and the names, or <em>To save, add a Reason for:</em> and the absent students still needing one. When it reads <em>Great work! You have fulfilled all necessary data for this session.</em>, you&rsquo;re done. The end of the <em>Session Completion</em> line can be cut off on a phone; the numbers at the start are the part that matters.</p></div>
+      </div>
+      <div class="note warn">
+        <svg aria-hidden="true"><use href="#i-warn"/></svg>
+        <div><b>Leaving with unsaved changes</b><p>The app asks <em>Looks like you have unsaved changes. Continue?</em> Tap <span class="ui">No</span> to stay with your edits. <span class="ui">Yes</span> leaves and throws your unsaved changes away. There is no Cancel.</p></div>
       </div>
 
-      <h3 id="sessions-number">Creating a session &mdash; Student Number type</h3>
-      <p>Some programs record a head count rather than named students. That flow is shorter, and it finishes in one save.</p>
+      <h3 id="sessions-number">Creating a session &mdash; if you enter a number of students</h3>
+      <p>Some programs record a head count rather than named students. Creating one of these sessions is shorter: set the time, then fill in one form.</p>
       <ol class="s">
-        <li><strong>Select date &amp; time</strong> inside the available range and tap <span class="ui">Start</span>. An empty session is created.</li>
+        <li><strong>Set the time</strong> inside the available range &mdash; use <span class="ui">Quick Durations</span> or <span class="ui">End Time</span> &mdash; and tap <span class="ui">Start</span>. There is nothing else to fill in here. An empty session is created.</li>
         <li><strong>Fill in the fields</strong> &mdash; teacher, number of students, grades and subjects.
           <ul>
             <li>If the teacher isn&rsquo;t in the list, tap the pen icon and type the name. Don&rsquo;t save yet.</li>
             <li>Choosing <span class="ui">Other</span> as a subject opens a free-text field &mdash; separate multiple subjects with commas.</li>
+            <li>The <span class="ui">X</span> beside the teacher clears it after asking first: <span class="ui">Yes</span> clears, <span class="ui">No</span> keeps.</li>
+            <li>Depending on your program, the subject may already be set at the top, with no <span class="ui">Subjects</span> box.</li>
           </ul>
         </li>
-        <li><strong>Tap Save.</strong></li>
+        <li><strong>Tap Save.</strong> You&rsquo;re back on the sessions list, with a message that the session was updated.
+          <ul>
+            <li>If a box is empty, <em>Field is empty</em> appears under it. Fill it in and tap <span class="ui">Save</span> again.</li>
+          </ul>
+        </li>
       </ol>
-      <div class="note stop">
-        <svg aria-hidden="true"><use href="#i-stop"/></svg>
-        <div><b>Saving ends the session immediately</b><p>A Student Number session goes straight to <span class="chip ended">Ended</span> on save. There are no further edits &mdash; check the numbers before you tap Save.</p></div>
+      <div class="note tip">
+        <svg aria-hidden="true"><use href="#i-bulb"/></svg>
+        <div><b>You can still change it while it&rsquo;s open</b><p>Saving doesn&rsquo;t close the session. Until it closes on its own (about 24 hours after it starts), tap its card in the <span class="ui">Open</span> tab and the <span class="ui">FINISH SESSION</span> form opens again with your answers filled in. Once it moves to <span class="ui">Ended</span>, its details are read-only.</p></div>
       </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Step 1 &mdash; time range"><img src="img/p23_041.webp" alt="Available time range for a student number session" loading="lazy"></span><figcaption><b>Step 1</b> Pick a slot, tap Start.</figcaption></figure>
+        <figure><span class="shot" data-cap="Step 1&nbsp;&mdash; time range"><img src="img/v233_starting-a-session-create-maple-grove-learning.webp" alt="Create Session showing only the time range, Start Time 6:00 AM, End Time 7:00 AM and the Quick Durations buttons" loading="lazy"></span><figcaption><b>Step 1</b> Set the time, tap Start.</figcaption></figure>
         <figure><span class="shot" data-cap="Step 2 &mdash; empty form"><img src="img/p23_042.webp" alt="Finish session form with empty Teacher, Number of Students, Grades and Subjects fields" loading="lazy"></span><figcaption><b>Step 2</b> Teacher, count, grades, subjects.</figcaption></figure>
-        <figure><span class="shot" data-cap="Step 2 &mdash; filled in"><img src="img/p23_043.webp" alt="Finish session form completed with a teacher name, 32 students, grades and two subjects" loading="lazy"></span><figcaption><b>Ready</b> Save ends the session.</figcaption></figure>
+        <figure><span class="shot" data-cap="Step 2&nbsp;&mdash; filled in"><img src="img/v233_finishing-a-session-finish-form.webp" alt="Finish Session form completed with teacher Mr Adams, 6 students, grades 3 and 4, and subjects ELA and Math" loading="lazy"></span><figcaption><b>Ready</b> Tap Save; you can reopen it while the session is open.</figcaption></figure>
       </div>
 
       <h3 id="sessions-delete">Deleting a session <span class="tag new">New</span></h3>
-      <p>An <span class="chip opened">Opened</span> session created by mistake can now be removed from the app: tap the trash icon on its card in the <span class="ui">Open</span> tab and confirm.</p>
+      <p>An <span class="chip opened">Open</span> session created by mistake can now be removed from the app: tap the trash icon on its card in the <span class="ui">Open</span> tab. Tap <span class="ui">Delete</span> to confirm, or <span class="ui">Cancel</span> to keep it.</p>
       <ul class="b">
         <li>Deletion cannot be undone.</li>
         <li>If the session already has assessments attached, Presentify warns you before removing them along with it.</li>
+        <li><span class="ui">Cancel</span> at either step leaves the session untouched.</li>
         <li>Locked and Ended sessions cannot be deleted &mdash; contact support instead.</li>
       </ul>
     </div>
   </section>
 
-  <!-- ============================ 06 ATTENDANCE ============================ -->
+  <!-- ============================ 05 ATTENDANCE ============================ -->
   <section class="chapter" id="attendance">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">06</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">05</span><span class="ch-rule"></span></div>
       <h2>Attendance details</h2>
-      <p class="lede">The Attendance Details screen is where a present student turns into a complete record: time in, time out, subject &mdash; and optionally an assessment and a session reflection.</p>
+      <p class="lede">The <span class="ui">ATTENDANCE DETAILS</span> screen is where a present student turns into a complete record. Depending on your program it asks for time in and time out, a subject, a teacher, student engagement, a topic and rating &mdash; and optionally an assessment and a session reflection.</p>
       <figure class="video" data-vid="1129864674" data-title="Attendance details" data-dur="1:01">
         <button type="button" class="v-play" aria-label="Play the Attendance details walkthrough, 61 seconds">
           <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
@@ -910,43 +968,55 @@ footer p + p{margin-top:.4rem}
       </figure>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>General rule</b><p>Attendance can only be changed while the session is <span class="chip opened">Opened</span>.</p></div>
+        <div><b>General rule</b><p>Attendance can only be changed while the session is <span class="chip opened">Open</span>.</p></div>
       </div>
 
       <h3 id="attendance-update">Updating a student&rsquo;s attendance</h3>
       <ol class="s">
         <li>Tap a present student&rsquo;s card (switch on).</li>
         <li>Set <strong>time in</strong> and <strong>time out</strong>. The duration in minutes is calculated for you.</li>
-        <li>Choose the <strong>subject</strong>. Selecting a subject is what unlocks the assessment bank list.</li>
-        <li>Optionally tap <span class="ui">Add Assessment</span> to open the assessment banks &mdash; see <a href="#assessments">Chapter 10</a>.</li>
+        <li>Choose the <strong>subject</strong>. Selecting a subject is what unlocks the assessment bank list. In some programs the subject is already set and shown in a gray box.</li>
+        <li>Depending on your program, also choose a <strong>teacher</strong> (tap <span class="ui">+</span> to add one), <strong>Student Engagement</strong>, or a <strong>Topic</strong> and <strong>Rating</strong>. Fill in everything the screen asks for &mdash; some fields only say they&rsquo;re missing when you save.</li>
+        <li>Optionally tap <span class="ui">Add Assessment</span> to open the assessment banks &mdash; see <a href="#assessments">Chapter 09</a>.</li>
         <li>Narrow a long bank list with the <span class="ui">Assessment Type</span> and <span class="ui">Grade</span> filters.</li>
         <li>Tap <span class="ui">Save Attendance Details</span>.</li>
       </ol>
+      <p>Save the student list first &mdash; with unsaved changes the app says <em>Please save attendance details first.</em> In programs that ask for a reason, tapping an absent student opens a shorter screen that only asks why they were absent.</p>
+      <p>Leaving with unsaved changes asks <em>Continue?</em> &mdash; <span class="ui">No</span> keeps you here with your changes; <span class="ui">Yes</span> leaves and throws away what you haven&rsquo;t saved.</p>
+      <div class="note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <div><b>If the save is refused</b><p>A <strong>Submit Error</strong> banner means something required is empty &mdash; look for <em>Field is empty</em> under a box, fill it in, and save again. A <em>Connection error</em> banner keeps you on the screen with your entries; tap <span class="ui">Save Attendance Details</span> again once you&rsquo;re back online.</p></div>
+      </div>
       <div class="note tip">
         <svg aria-hidden="true"><use href="#i-bulb"/></svg>
-        <div><b>Green bank labels</b><p>A green-labelled assessment bank means this student already has assessments linked to it &mdash; the quickest way to see what you&rsquo;ve already entered.</p></div>
+        <div><b>Highlighted banks</b><p>A bank with a filled title bar already has an assessment for this student &mdash; the quickest way to see what you&rsquo;ve already entered.</p></div>
       </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Attendance details"><img src="img/p24_046.webp" alt="Attendance details form with time in, time out, subject and an Add Assessment button" loading="lazy"></span><figcaption><b>The form</b> Time in, time out, subject.</figcaption></figure>
-        <figure><span class="shot" data-cap="Assessment banks"><img src="img/p24_047.webp" alt="Assessments banks list with type and grade filters and two banks highlighted in green" loading="lazy"></span><figcaption><b>Banks</b> Green = already linked to this student.</figcaption></figure>
-        <figure><span class="shot" data-cap="With reflection section"><img src="img/p25_048.webp" alt="Attendance details with an add session reflection section below the assessment section" loading="lazy"></span><figcaption><b>Reflections</b> Present on some program flows.</figcaption></figure>
+        <figure><span class="shot" data-cap="Attendance details"><img src="img/v233_student-details-attendance-details-screen.webp" alt="Attendance Details for Ava Thompson with times, Subject: Math, teacher Ms Brooks, Student Engagement, Add Assessment and Grade Standard Level" loading="lazy"></span><figcaption><b>The form</b> Fields depend on your program.</figcaption></figure>
+        <figure><span class="shot" data-cap="Assessment banks"><img src="img/p24_047.webp" alt="Assessments banks list with type and grade filters and two banks with filled title bars" loading="lazy"></span><figcaption><b>Banks</b> A filled title bar = already has an assessment for this student.</figcaption></figure>
+        <figure><span class="shot" data-cap="With reflection section"><img src="img/p25_048.webp" alt="Attendance details with an add session reflection section below the assessment section" loading="lazy"></span><figcaption><b>Reflections</b> Shown in some programs.</figcaption></figure>
+        <figure><span class="shot" data-cap="Save refused"><img src="img/v233_student-details-required-field-error.webp" alt="Attendance Details with a Submit Error banner at the top and the message Field is empty under the empty teacher box" loading="lazy"></span><figcaption><b>Submit Error</b> Look for <em>Field is empty</em> under a box.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 07 REFLECTIONS ============================ -->
+  <!-- ============================ 06 REFLECTIONS ============================ -->
   <section class="chapter" id="reflections">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">07</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">06</span><span class="ch-rule"></span></div>
       <h2>Session reflections</h2>
       <p class="lede">A session reflection records how well a student grasped specific focus standards in that session, on a four-point scale. Depending on your program, the reflection section appears inside Attendance Details.</p>
+      <div class="note newbox">
+        <svg aria-hidden="true"><use href="#i-spark"/></svg>
+        <div><b>Set reflections once, for the whole grade</b><p>Depending on your program, the <span class="ui">CREATE SESSION</span> screen has a <span class="ui">Session Reflection</span> box for each grade. Choose a subject, tap <span class="ui">Select focus standards</span> in a grade&rsquo;s box, and set a rating; tap <span class="ui">Add grade</span> for another grade. What you choose there is copied onto each student in that grade, so it&rsquo;s already filled in on their Attendance Details. If you skip it, the app asks <em>No session reflection added&hellip;</em> &mdash; tap <span class="ui">Continue</span> to create the session anyway.</p></div>
+      </div>
 
       <h3 id="reflections-add">Adding a reflection</h3>
       <ol class="s">
         <li>Tap a present student&rsquo;s card to open <strong>Attendance Details</strong>.</li>
-        <li>Fill in the mandatory fields (time in, time out, subject).</li>
+        <li>Fill in the fields the screen asks for.</li>
         <li>Choose a <span class="ui">Grade Standard Level</span> from the dropdown. This filters which focus standards are available.</li>
-        <li>Select one or more <span class="ui">Focus Standards</span>. <span class="tag new">2.2.7</span> On flows that use them, <strong>subject topics</strong> are part of this step too.</li>
+        <li>Select one or more <span class="ui">Focus Standards</span>. In programs that use topics, <span class="ui">Topic</span> and <span class="ui">Rating</span> are separate boxes on the same screen.</li>
         <li>Tap <span class="ui">Add Session Reflection</span> to open the Focus Standards screen.</li>
         <li>Rate every standard from 1 to 4, then tap <span class="ui">Submit Ratings</span>.</li>
         <li>After submission you can <span class="ui">Update Ratings</span> or go back to Attendance Details.</li>
@@ -966,35 +1036,31 @@ footer p + p{margin-top:.4rem}
         <figure><span class="shot" data-cap="Grade standard level"><img src="img/p25_049.webp" alt="Grade Standard Level dropdown open, listing Kindergarten through Grade 4" loading="lazy"></span><figcaption><b>Grade level first</b> It filters the standards.</figcaption></figure>
         <figure><span class="shot" data-cap="Select focus standards"><img src="img/p25_050.webp" alt="Focus standards multi-select with three standards checked" loading="lazy"></span><figcaption><b>Focus standards</b> Pick one or several.</figcaption></figure>
         <figure><span class="shot" data-cap="Rate focus standards"><img src="img/p25_051.webp" alt="Rate Focus Standards screen showing the 1 to 4 rating scale and standard descriptions" loading="lazy"></span><figcaption><b>Rate</b> Each standard, 1&ndash;4.</figcaption></figure>
-        <figure><span class="shot" data-cap="Ratings entered"><img src="img/p25_052.webp" alt="Rating screen with ratings selected and a Submit Ratings button" loading="lazy"></span><figcaption><b>Submit</b> Colour reflects the level.</figcaption></figure>
+        <figure><span class="shot" data-cap="Ratings entered"><img src="img/p25_052.webp" alt="Rating screen with ratings selected and a Submit Ratings button" loading="lazy"></span><figcaption><b>Submit</b> Each rating shows its level as text, e.g. <em>Current: Proficient Understanding</em>.</figcaption></figure>
         <figure><span class="shot" data-cap="Ratings saved"><img src="img/p25_053.webp" alt="Saved ratings shown per standard with an Update Ratings button" loading="lazy"></span><figcaption><b>Saved</b> Update Ratings to revise.</figcaption></figure>
       </div>
 
       <h3 id="reflections-edit">Editing, clearing, and multiple reflections</h3>
-      <p>Back on Attendance Details, the saved reflection is summarised per standard with its level, plus two actions: <span class="ui">Edit Ratings</span> and <span class="ui">Clear Reflections</span>.</p>
+      <p>Back on Attendance Details, the saved reflection is summarized per standard with its level, plus two actions: <span class="ui">Edit Ratings</span> and <span class="ui">Clear Reflections</span>.</p>
       <div class="note newbox">
         <svg aria-hidden="true"><use href="#i-spark"/></svg>
         <div><b>Multiple reflections per session</b> <span class="tag new">New in 2.2.13</span><p>A student can now carry more than one session reflection for the same session &mdash; useful when a single block covers two subjects or two standard sets. Add another with <span class="ui">Add Session Reflection</span>; each is listed separately.</p></div>
       </div>
       <div class="note warn">
         <svg aria-hidden="true"><use href="#i-warn"/></svg>
-        <div><b>Only while the session is open</b><p>Reflections can be edited or deleted as long as the session is <span class="chip opened">Opened</span>. After it locks or ends, they are read-only.</p></div>
+        <div><b>Only while the session is open</b><p>Reflections can be edited or deleted as long as the session is <span class="chip opened">Open</span>. After it locks or ends, they are read-only.</p></div>
       </div>
       <div class="strip wide">
         <figure><span class="shot" data-cap="Reflection summary"><img src="img/p26_054.webp" alt="Attendance details showing a session reflections summary with Edit Ratings and Clear Reflections buttons" loading="lazy"></span><figcaption><b>Summary</b> Level per standard, with Edit and Clear.</figcaption></figure>
-        <figure><span class="shot" data-cap="Adding another reflection"><img src="img/p27_055.webp" alt="Attendance details for another student with grade and standard selected and Add Session Reflection ready" loading="lazy"></span><figcaption><b>Another reflection</b> Grade 3, standard 3.MD.C.7.b.</figcaption></figure>
-        <figure><span class="shot" data-cap="Unrated standard"><img src="img/p27_056.webp" alt="Rate focus standards screen with a maths standard not yet rated and Submit disabled" loading="lazy"></span><figcaption><b>Submit stays off</b> Until every standard is rated.</figcaption></figure>
-        <figure><span class="shot" data-cap="Rated and ready"><img src="img/p28_057.webp" alt="The same standard rated Proficient Understanding with Submit Ratings enabled" loading="lazy"></span><figcaption><b>Rated</b> Submit becomes available.</figcaption></figure>
-        <figure><span class="shot" data-cap="Existing ratings"><img src="img/p28_058.webp" alt="Rating screen noting that existing ratings are shown and can be updated" loading="lazy"></span><figcaption><b>Coming back</b> Existing ratings are pre-filled.</figcaption></figure>
       </div>
     </div>
   </section>
-  <!-- ============================ 08 STUDENTS ============================ -->
+  <!-- ============================ 07 STUDENTS ============================ -->
   <section class="chapter" id="students">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">08</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">07</span><span class="ch-rule"></span></div>
       <h2>Students</h2>
-      <p class="lede">Administrators load the school rosters, but educators can add students too &mdash; from the STUDENTS view, while building a group, or in the middle of creating a session.</p>
+      <p class="lede">Administrators load the school&rsquo;s students, but educators can add students too &mdash; from the STUDENTS tab, while building or editing a group, or with <span class="ui">Add Student</span> in a session that&rsquo;s still open.</p>
       <figure class="video" data-vid="1129864884" data-title="Students" data-dur="0:15">
         <button type="button" class="v-play" aria-label="Play the Students walkthrough, 15 seconds">
           <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
@@ -1010,13 +1076,16 @@ footer p + p{margin-top:.4rem}
       </figure>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>Not every program has a student list</b><p>The STUDENTS view only appears for program types that use roster-based sessions. Student Number programs don&rsquo;t track named students.</p></div>
+        <div><b>Not every program has a student list</b><p>In programs where you record how many students attended rather than each student by name, the <span class="ui">STUDENTS</span> and <span class="ui">GROUPS</span> tabs read <em>This view is not supported for the selected options.</em> There&rsquo;s nothing to do on either tab for that assignment.</p></div>
       </div>
       <ul class="b">
-        <li><strong>Search and filter</strong> &mdash; find a student by name, or narrow the list by <span class="ui">Verified Status</span> and <span class="ui">Grades</span>. The <span class="ui">&times;</span> button clears both filters.</li>
-        <li><strong>Refresh</strong> &mdash; pull down on the list.</li>
+        <li><strong>Search and filter</strong> &mdash; type part of a name in <span class="ui">Search ...</span>, or narrow the list by <span class="ui">Verified Status</span> (All, Verified, Unverified) and <span class="ui">Grades</span>. The <span class="ui">&times;</span> next to Grades clears only your grade choice. To see everyone again, also clear the search and set Verified Status to All.</li>
+        <li><strong>Sort</strong> &mdash; tap the three-line button next to <span class="ui">+</span> to reverse the order of the list.</li>
+        <li><strong>Refresh</strong> &mdash; pull down on the list. If pulling down doesn&rsquo;t refresh the list, go back and open the assignment again.</li>
         <li><strong>Open a profile</strong> &mdash; tap any student card.</li>
       </ul>
+      <p>Each card shows the student&rsquo;s initials, grade and full name. A small badge on the initials shows whether their information has been verified: a tick for verified, an exclamation mark for not yet verified.</p>
+      <p>If the school has no students yet, the list reads <em>No students found for this school.</em> with an <span class="ui">Add Student</span> button beneath it. If your search or filters match nobody, it reads <em>No students found...</em></p>
 
       <h3 id="students-add">Adding a student</h3>
       <ol class="s">
@@ -1024,24 +1093,30 @@ footer p + p{margin-top:.4rem}
         <li>Enter first name, middle name (optional), last name and grade. Fields marked <code>*</code> are required.</li>
         <li>Tap <span class="ui">Save</span>.</li>
       </ol>
-      <p>The student joins the school&rsquo;s roster. Adding them to a group is a separate step &mdash; see <a href="#groups-newstudent">Chapter 12</a>.</p>
+      <p>The <span class="ui">Add Student</span> sheet shows your school and district at the top. The grades you can pick depend on your program &mdash; a program for older students may offer only grades 9 to 12.</p>
+      <p>If a required field is empty, an error appears under it and nothing is saved. Otherwise the sheet closes, a message reads <em>Student &ldquo;&hellip;&rdquo; added successfully!</em>, and the new student appears in the list with the not-yet-verified badge.</p>
+      <p>The student joins the school&rsquo;s student list. Adding them to a group is a separate step &mdash; see <a href="#groups-newstudent">Chapter 11</a>.</p>
       <div class="note warn">
         <svg aria-hidden="true"><use href="#i-warn"/></svg>
-        <div><b>Check before you add</b><p>Search the list first. There is no way to remove a student from a school roster yourself, so a duplicate has to be cleaned up by support.</p></div>
+        <div><b>Check before you add</b><p>Search the list first. There is no way to remove a student from the school&rsquo;s student list yourself, so a duplicate has to be cleaned up by support.</p></div>
+      </div>
+      <div class="note warn">
+        <svg aria-hidden="true"><use href="#i-warn"/></svg>
+        <div><b>Back closes the form</b><p>If you use your device&rsquo;s back button while the Add Student sheet is open, it closes at once and drops what you typed. There&rsquo;s no warning. Reopen it and start again.</p></div>
       </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Students list"><img src="img/p29_059.webp" alt="Students list with search field, verified status and grades filters" loading="lazy"></span><figcaption><b>Students</b> Search, Verified Status, Grades.</figcaption></figure>
-        <figure><span class="shot" data-cap="Add Student"><img src="img/p29_060.webp" alt="Add Student dialog with first, middle and last name fields and a grade picker" loading="lazy"></span><figcaption><b>Add Student</b> Name and grade, then Save.</figcaption></figure>
+        <figure><span class="shot" data-cap="Students list"><img src="img/v233_students-and-groups-students-tab.webp" alt="The STUDENTS tab with the add button, sort button, search field, Verified Status and Grades filters, and student rows" loading="lazy"></span><figcaption><b>Students</b> Add, sort, search, Verified Status and Grades.</figcaption></figure>
+        <figure><span class="shot" data-cap="Add Student"><img src="img/p29_060.webp" alt="Add Student sheet with first, middle and last name fields and a grade picker" loading="lazy"></span><figcaption><b>Add Student</b> Name and grade, then Save.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 09 STUDENT PROFILE ============================ -->
+  <!-- ============================ 08 STUDENT PROFILE ============================ -->
   <section class="chapter" id="profile">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">09</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">08</span><span class="ch-rule"></span></div>
       <h2>Student profile</h2>
-      <p class="lede">One student, everything on record: the sessions they attended, the assessments and surveys they&rsquo;ve taken, and a consolidated report.</p>
+      <p class="lede">One student, everything on record: their sessions, assessments, surveys and progress checks, and a summary report.</p>
       <figure class="video" data-vid="1129864854" data-title="Student profile" data-dur="0:18">
         <button type="button" class="v-play" aria-label="Play the Student profile walkthrough, 18 seconds">
           <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
@@ -1058,46 +1133,51 @@ footer p + p{margin-top:.4rem}
 
       <h3 id="profile-open">Four ways in</h3>
       <ul class="b">
-        <li><strong>Students screen</strong> &rarr; tap a student card.</li>
+        <li><strong>STUDENTS tab</strong> &rarr; tap a student card.</li>
         <li><strong>Groups screen</strong> &rarr; open a group &rarr; long-press a student card &rarr; tap the open icon.</li>
         <li><strong>Session</strong> &rarr; open the session &rarr; tap a present student &rarr; Attendance Details &rarr; tap the student&rsquo;s name.</li>
         <li><strong>Surveys</strong> &rarr; the same route as above, then the Surveys tab.</li>
       </ul>
 
       <h3 id="profile-tabs">The tabs</h3>
-      <p>The header carries the student&rsquo;s name, ID, grade, active and verified state, and school. Below it:</p>
+      <p>The header carries the student&rsquo;s name, ID, grade, active and verified state, and school.</p>
+      <p>Below the header is a note titled <em>Displayed data is for active filters only</em>, with a warning icon. It isn&rsquo;t reporting a problem: tap it to see the <strong>Program</strong> and <strong>Type</strong> the profile belongs to (for example <em>Program: Tutoring</em>, <em>Type: After-School</em>), and tap it again to close it.</p>
+      <p>Below that are the tabs:</p>
       <div class="tablewrap">
         <table>
           <thead><tr><th>Tab</th><th>What it holds</th></tr></thead>
           <tbody>
-            <tr><td><strong>Sessions</strong></td><td>Every session this student was part of, with completion and status. Only one session can be open at a time from here.</td></tr>
-            <tr><td><strong>Assessments</strong></td><td>Completed assessments with type, grade and score. Filterable by <span class="ui">Assessment Type</span> and <span class="ui">Subject</span>.</td></tr>
-            <tr><td><strong>Surveys</strong></td><td>Completed Student Subject Comfort Surveys with their average score.</td></tr>
-            <tr><td><strong>Progress</strong> <span class="tag beta">Preview</span></td><td>Progress Checks &mdash; short auto-graded questionnaires, up to three attempts per check. Rolling out; may not be in your build yet.</td></tr>
-            <tr><td><strong>Report</strong> <span class="tag new">New in 2.2.3</span></td><td>A per-subject summary in one place: educator notes, session reflections with their ratings, and assessments.</td></tr>
+            <tr><td><strong>Sessions</strong></td><td>Every session this student was part of, with completion and status. Each card shows the date and time, <em>Present x of y</em>, the session code and a <em>COMPLETED</em> percentage bar. Tap a card to open that session. Only one session can be open at a time from here. When you go back from a session you opened here, you return to the assignment&rsquo;s STUDENTS tab, not to the profile. Open the student again to carry on.</td></tr>
+            <tr><td><strong>Assessments</strong></td><td>Completed assessments with type, grade and score. Filterable by <span class="ui">Assessment Type</span> and <span class="ui">Subject</span>, plus a calendar button to filter by date, and <span class="ui">+</span> to record a new one.</td></tr>
+            <tr><td><strong>Surveys</strong></td><td>Completed Student Subject Comfort Surveys with their average score. Filter by date with the calendar button; <span class="ui">+</span> adds a new survey.</td></tr>
+            <tr><td><strong>Progress</strong></td><td>Progress checks &mdash; short sets of questions that check a student&rsquo;s understanding. Most are scored for you; on some you mark each answer <span class="ui">Correct</span> or <span class="ui">Incorrect</span> yourself. Up to three attempts per check.</td></tr>
+            <tr><td><strong>Report</strong> <span class="tag new">New in 2.2.3</span></td><td>A summary per subject: a totals card (<strong>Sessions</strong>, <strong>Time</strong>, <strong>Assessments</strong>), then one card per subject that you tap to open or close. Each subject card gathers your notes for each session, session reflections with their ratings, and assessments.</td></tr>
           </tbody>
         </table>
       </div>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>Report is read-only</b><p>The report gathers what has already been entered elsewhere; there is nothing to fill in on it, and PDF download was removed in 2.2.5.</p></div>
-      </div>
-      <div class="strip">
-        <figure><span class="shot" data-cap="Profile &mdash; Sessions tab"><img src="img/p31_063.webp" alt="Student profile Sessions tab listing sessions with completion percentages" loading="lazy"></span><figcaption><b>Sessions</b> Every session, with status.</figcaption></figure>
-        <figure><span class="shot" data-cap="Profile &mdash; Assessments tab"><img src="img/p31_064.webp" alt="Student profile Assessments tab with type and subject filters and scored assessment cards" loading="lazy"></span><figcaption><b>Assessments</b> Type, grade and score per card.</figcaption></figure>
-        <figure><span class="shot" data-cap="Profile &mdash; Surveys tab"><img src="img/p31_065.webp" alt="Student profile Surveys tab showing one completed survey with its score" loading="lazy"></span><figcaption><b>Surveys</b> Completed surveys and averages.</figcaption></figure>
+        <div><b>Tab names are cut off</b><p>Even at normal text size the tab names are shortened, and with large text only the first two letters show. They&rsquo;re always, from left to right: <strong>Sessions</strong>, <strong>Assessments</strong>, <strong>Surveys</strong>, <strong>Progress</strong>, <strong>Report</strong>.</p></div>
       </div>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>About these screenshots</b><p>They were captured on an earlier build and show three tabs. Newer versions add <strong>Progress</strong> and <strong>Report</strong> to the same row.</p></div>
+        <div><b>Report is read-only</b><p>The report gathers what has already been entered elsewhere; there is nothing to fill in on it, and PDF download was removed in 2.2.5.</p></div>
+      </div>
+      <p>The totals on <span class="ui">Report</span> can be higher than the number of sessions listed on the <span class="ui">Sessions</span> tab &mdash; the two don&rsquo;t always count the same sessions.</p>
+      <p>If you opened the profile from the STUDENTS tab, the back arrow, your device&rsquo;s back button and your browser&rsquo;s back button all take you back there. On the browser version, don&rsquo;t reload the page while a profile is open &mdash; go back and open the student again.</p>
+      <div class="strip">
+        <figure><span class="shot" data-cap="Profile&nbsp;&mdash; header and tabs"><img src="img/v233_tracking-progress-profile-header.webp" alt="A student profile with the header, the opened program-and-type note, five tabs and one session card" loading="lazy"></span><figcaption><b>Profile</b> Header, the note opened, and the five tabs.</figcaption></figure>
+        <figure><span class="shot" data-cap="Profile&nbsp;&mdash; Assessments tab"><img src="img/v233_tracking-progress-assessments-tab.webp" alt="The Assessments tab with type and subject filters, a calendar button, a plus button and one saved assessment" loading="lazy"></span><figcaption><b>Assessments</b> Filters, date, + and one saved card.</figcaption></figure>
+        <figure><span class="shot" data-cap="Profile&nbsp;&mdash; Progress tab"><img src="img/v233_tracking-progress-progress-card.webp" alt="The Progress tab with a plus button and one check card, Fractions Check, Try 1, Math, Score 3/3, with a Comparing fractions skill" loading="lazy"></span><figcaption><b>Progress</b> One card per check, with its try number and score.</figcaption></figure>
+        <figure><span class="shot" data-cap="A progress check"><img src="img/v233_tracking-progress-progress-check.webp" alt="A progress check screen for Emma Johnson with Question 1 of 3 using round answer buttons and Question 2 of 3 using square checkboxes" loading="lazy"></span><figcaption><b>A progress check</b> Questions are counted, for example 1 of 3; one answer or several.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 10 ASSESSMENTS ============================ -->
+  <!-- ============================ 09 ASSESSMENTS ============================ -->
   <section class="chapter" id="assessments">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">10</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">09</span><span class="ch-rule"></span></div>
       <h2>Assessments</h2>
       <p class="lede">An assessment records how a student did on a set of questions. You never build one from scratch &mdash; you start from an assessment bank and fill in that student&rsquo;s answers.</p>
       <figure class="video" data-vid="1129864596" data-title="Assessments" data-dur="1:04">
@@ -1115,9 +1195,9 @@ footer p + p{margin-top:.4rem}
       </figure>
 
       <h3 id="assessments-bank">Assessment banks</h3>
-      <p>A bank is the template: subject, type (PRE / POST), grade, maximum score, the list of questions and any attached documents. Banks are the starting point for every assessment.</p>
+      <p>A bank is the template: subject, type (for example Pre or Post), grade, level, maximum score, the list of questions and any attached documents. Banks are the starting point for every assessment.</p>
       <ul class="b">
-        <li><strong>Filters</strong> &mdash; narrow by <span class="ui">Assessment Type</span> and <span class="ui">Grade</span>.</li>
+        <li><strong>Filters</strong> &mdash; narrow by <span class="ui">Assessment Type</span> and <span class="ui">Grade</span>. <span class="ui">Grade</span> starts at the student&rsquo;s own grade.</li>
         <li><strong>Multi-subject support</strong> <span class="tag new">2.2.5</span> &mdash; a bank can cover more than one subject.</li>
         <li><strong>Filtered by state</strong> <span class="tag new">2.2.7</span> &mdash; you only see banks relevant to your state, which keeps long lists manageable.</li>
         <li><strong>Progressive loading</strong> &mdash; banks load page by page as you scroll.</li>
@@ -1125,44 +1205,57 @@ footer p + p{margin-top:.4rem}
 
       <h3 id="assessments-assign">Assigning an assessment to a student</h3>
       <ol class="s">
-        <li>In an <span class="chip opened">Opened</span> session, tap a present student&rsquo;s card.</li>
-        <li>Select a <strong>subject</strong> &mdash; this enables the assessment bank list.</li>
+        <li>In an <span class="chip opened">Open</span> session, tap a present student&rsquo;s card.</li>
+        <li>On the student&rsquo;s <span class="ui">ATTENDANCE DETAILS</span> screen, make sure <span class="ui">Subject</span> is set, then tap <span class="ui">Add Assessment</span> (under <em>Do you want to add an assessment?</em>).</li>
+        <li>The assessment banks are listed, with <span class="ui">Assessment Type</span> and <span class="ui">Grade</span> filters. Grade starts at the student&rsquo;s own grade.</li>
         <li>Tap a bank card. Any assessments this student already has from that bank are listed.</li>
         <li>Tap <span class="ui">+</span> to add a new one, or tap an existing one to review it.</li>
         <li>In the assessment window:
           <ul>
-            <li><span class="ui">Open Document</span> shows the question sheet as a PDF; <span class="ui">Open in Browser</span> opens it in a new tab.</li>
-            <li>Toggle each question on for correct, off for incorrect.</li>
+            <li><span class="ui">Open Document</span> opens the question sheet on an <em>Assessment Document</em> screen inside the app (swipe between pages; <span class="ui">Refresh</span> retries). <span class="ui">Open in Browser</span> opens the same file in your web browser. On the browser version, Open Document opens it in a new tab.</li>
+            <li>Set each question&rsquo;s switch: knob to the right for correct, knob to the left for incorrect.</li>
           </ul>
         </li>
-        <li>Tap <span class="ui">Save</span>.</li>
+        <li>Tap <span class="ui">Save</span>. While it saves, the button reads <em>Saving..</em>; then a message reads <em>Assessment saved successfully!</em> <span class="ui">Cancel</span> leaves without saving.</li>
       </ol>
+      <h4 id="assessments-profile">From the student&rsquo;s profile</h4>
+      <ol class="s">
+        <li>On the profile&rsquo;s <span class="ui">Assessments</span> tab, tap <span class="ui">+</span>.</li>
+        <li>Pick a session. Only sessions where the student was present, and which aren&rsquo;t locked or ended, are offered. If none qualify you&rsquo;ll see <em>No active sessions available.</em></li>
+        <li>On <span class="ui">ASSESSMENT BANKS</span>, pick a set of questions.</li>
+        <li>Mark each question on the <span class="ui">NEW ASSESSMENT</span> screen and tap <span class="ui">Save</span>.</li>
+      </ol>
+      <p>If you see <em>Subject not selected!</em> followed by <em>Go back to home and complete session.</em>, set the subject in that session first, then try again.</p>
+      <div class="note warn">
+        <svg aria-hidden="true"><use href="#i-warn"/></svg>
+        <div><b>Unsaved answers</b><p>If you leave the answer screen with answers not yet saved, the app asks <em>Looks like you have unsaved changes.</em> <span class="ui">No</span> keeps you on the screen; <span class="ui">Yes</span> leaves and throws your answers away.</p></div>
+      </div>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
         <div><b>Score arrives after saving</b><p>Score percentage, band level and focus standards are calculated on save. Reopen the assessment to see them.</p></div>
       </div>
       <div class="strip wide">
         <figure><span class="shot" data-cap="No assessments yet"><img src="img/p33_070.webp" alt="Assessments for a student showing an empty state and a plus button" loading="lazy"></span><figcaption><b>Empty</b> Tap <em>+</em> for a new assessment.</figcaption></figure>
-        <figure><span class="shot" data-cap="New assessment &mdash; header"><img src="img/p33_071.webp" alt="New assessment screen showing session, student, level, type, subject, maximum score and question toggles" loading="lazy"></span><figcaption><b>New assessment</b> Context at the top, questions below.</figcaption></figure>
-        <figure><span class="shot" data-cap="New assessment &mdash; answers"><img src="img/p33_072.webp" alt="Assessment questions with correct and incorrect toggles and empty score fields" loading="lazy"></span><figcaption><b>Answers</b> On = correct, off = incorrect.</figcaption></figure>
+        <figure><span class="shot" data-cap="New assessment&nbsp;&mdash; header"><img src="img/v233_tracking-progress-record-assessment.webp" alt="The NEW ASSESSMENT screen with session, student, cycle, level, type, subject and maximum score, the Open Document and Open in Browser buttons, and numbered questions with switches" loading="lazy"></span><figcaption><b>New assessment</b> Details at the top, questions below; knob right = correct.</figcaption></figure>
+        <figure><span class="shot" data-cap="New assessment &mdash; answers"><img src="img/p33_072.webp" alt="Assessment questions with correct and incorrect toggles and empty score fields" loading="lazy"></span><figcaption><b>Answers</b> Knob right = correct, knob left = incorrect.</figcaption></figure>
         <figure><span class="shot" data-cap="Saved assessment"><img src="img/p33_073.webp" alt="Saved assessment card showing date, time, type, grade and score" loading="lazy"></span><figcaption><b>Saved</b> It appears in the student&rsquo;s list.</figcaption></figure>
         <figure><span class="shot" data-cap="Scored assessment"><img src="img/p34_074.webp" alt="Reopened assessment showing score percentage, band level and matched focus standards" loading="lazy"></span><figcaption><b>Reopened</b> Score % and focus standards filled in.</figcaption></figure>
       </div>
       <div class="note tip">
         <svg aria-hidden="true"><use href="#i-bulb"/></svg>
-        <div><b>Who have I already assessed?</b><p>Two ways: open the <a href="#profile">student&rsquo;s profile</a> and check the Assessments tab, or watch for <strong>green-labelled banks</strong> while assigning &mdash; green means this student already has assessments from that bank.</p></div>
+        <div><b>Who have I already assessed?</b><p>Two ways: open the <a href="#profile">student&rsquo;s profile</a> and check the Assessments tab, or look at the bank list while assigning &mdash; a bank with a filled title bar means this student already has assessments from that bank.</p></div>
       </div>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>No Add Assessment button?</b><p>Assessments are switched on per partner. If the partner running your program has them turned off, the button is hidden on every roster flow.</p></div>
+        <div><b>No Add Assessment button?</b><p>Assessments are switched on per program. If your program has them turned off, the button is hidden.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 11 SURVEYS ============================ -->
+  <!-- ============================ 10 SURVEYS ============================ -->
   <section class="chapter" id="surveys">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">11</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">10</span><span class="ch-rule"></span></div>
       <h2>Surveys</h2>
       <p class="lede">Student Subject Comfort Surveys ask a student how confident they feel about a subject, on a five-point agree/disagree scale. They live on the student&rsquo;s profile, not inside a session.</p>
       <figure class="video" data-vid="1129864911" data-title="Surveys" data-dur="0:14">
@@ -1186,26 +1279,28 @@ footer p + p{margin-top:.4rem}
       <ol class="s">
         <li>Open the student&rsquo;s profile and go to the <span class="ui">Surveys</span> tab.</li>
         <li>Tap <span class="ui">+</span> to add a new survey.</li>
-        <li>Choose a survey bank. Banks can be filtered by <span class="ui">Grade</span>, <span class="ui">Subject</span> and <span class="ui">Type</span>.</li>
-        <li>Work through the statements, marking each from <strong>1 (Strongly Disagree)</strong> to <strong>5 (Strongly Agree)</strong>.</li>
-        <li>Tap <span class="ui">Submit Survey</span>.</li>
+        <li>Choose a survey bank. Banks can be filtered by <span class="ui">Grade</span>, <span class="ui">Subject</span> and <span class="ui">Type</span>. The list is titled <span class="ui">SURVEYS</span>; <span class="ui">Grade</span> starts at the student&rsquo;s own grade. A long list shows <em>Showing x of y</em> and loads more as you scroll, or with a <span class="ui">Load More</span> button.</li>
+        <li>Work through the statements, marking each from <strong>1 (Strongly Disagree)</strong> to <strong>5 (Strongly Agree)</strong>. The number you tap stays highlighted.</li>
+        <li>Tap <span class="ui">Submit Survey</span>. It stays grayed out until every statement has a rating. After you tap it you&rsquo;re back on the Surveys tab, and a message reads <em>Survey added successfully!</em></li>
       </ol>
+      <p>Tapping a survey you&rsquo;ve already submitted opens it read-only: the answers are shown and there&rsquo;s no <span class="ui">Submit Survey</span> button.</p>
+      <p>With none yet, the tab reads <em>No surveys for this student.</em> Use the calendar button to show only one date&rsquo;s surveys.</p>
       <p>Completed surveys stay on the profile with their average score &mdash; 3.6 out of 5 in the example below.</p>
       <div class="strip wide">
         <figure><span class="shot" data-cap="No surveys yet"><img src="img/p36_077.webp" alt="Student profile Surveys tab with an empty state" loading="lazy"></span><figcaption><b>Empty</b> Tap <em>+</em> to start one.</figcaption></figure>
         <figure><span class="shot" data-cap="Survey banks"><img src="img/p36_078.webp" alt="Surveys bank list with grade, subject and type filters" loading="lazy"></span><figcaption><b>Banks</b> Filter by grade, subject, type.</figcaption></figure>
-        <figure><span class="shot" data-cap="Filling out a survey"><img src="img/p37_079.webp" alt="Survey statements each rated on a one to five strongly disagree to strongly agree scale" loading="lazy"></span><figcaption><b>1&ndash;5 per statement</b> Strongly Disagree to Strongly Agree.</figcaption></figure>
+        <figure><span class="shot" data-cap="Filling out a survey"><img src="img/v233_tracking-progress-survey.webp" alt="A survey for Emma Johnson with each statement rated 4 on a one-to-five scale and the Submit Survey button" loading="lazy"></span><figcaption><b>1&ndash;5 per statement</b> Every statement rated, so Submit Survey can be tapped.</figcaption></figure>
         <figure><span class="shot" data-cap="Survey saved"><img src="img/p37_080.webp" alt="Saved survey card on the student profile showing type, grade and a score of 3.6" loading="lazy"></span><figcaption><b>Saved</b> Average score on the card.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 12 GROUPS ============================ -->
+  <!-- ============================ 11 GROUPS ============================ -->
   <section class="chapter" id="groups">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">12</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">11</span><span class="ch-rule"></span></div>
       <h2>Student groups</h2>
-      <p class="lede">A group is a saved set of students you teach together. Groups are created by educators, they&rsquo;re mandatory for roster sessions, and they exist to stop you re-picking the same fifteen names twice a week.</p>
+      <p class="lede">A group is a saved set of students you teach together. You make your own groups, and they save you re-picking the same names every time you start a session &mdash; though you can always pick students one by one with <span class="ui">Continue Without a Group</span>.</p>
       <figure class="video" data-vid="1129864742" data-title="Student groups" data-dur="0:51">
         <button type="button" class="v-play" aria-label="Play the Student groups walkthrough, 51 seconds">
           <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
@@ -1222,33 +1317,35 @@ footer p + p{margin-top:.4rem}
 
       <h3 id="groups-scope">Visibility and scope</h3>
       <ul class="b">
-        <li>The Groups list only appears once you&rsquo;ve selected an assignment, or set the district / school / program filters.</li>
+        <li>Open a class from your <span class="ui">Assignments</span> list; the <span class="ui">GROUPS</span> tab sits beside <span class="ui">SESSIONS</span> and <span class="ui">STUDENTS</span>. The row of tabs can be wider than your screen &mdash; if GROUPS is cut off at the right edge, swipe the row sideways.</li>
         <li>Groups are scoped to that <strong>school plus program type</strong> &mdash; a group made for one program won&rsquo;t show up under another.</li>
-        <li>Pull down on the list to refresh. With no groups, you get an empty state and a create action.</li>
+        <li>Pull down on the list to refresh. If pulling down doesn&rsquo;t refresh the list, go back and open the assignment again. With no groups, you get an empty state and a create action.</li>
+        <li>The tab shows a <span class="ui">STUDENT GROUPS</span> header with a sort button that reverses the order of the list, a <span class="ui">+ CREATE NEW STUDENT GROUP</span> row, and one card per group.</li>
+        <li>The groups you see are the ones you made yourself. Other educators don&rsquo;t see your groups, and you don&rsquo;t see theirs.</li>
+        <li>Creating a group doesn&rsquo;t change who is in the assignment &mdash; it&rsquo;s a way of organizing students you already have.</li>
       </ul>
       <p>Why bother: faster session setup, fewer attendance mistakes, and a clean separation between classes, cohorts and periods.</p>
       <div class="strip">
-        <figure><span class="shot" data-cap="Groups view"><img src="img/p39_083.webp" alt="Student groups view inside an assignment with a create action and one existing group" loading="lazy"></span><figcaption><b>GROUPS</b> Scoped to this school and program type.</figcaption></figure>
+        <figure><span class="shot" data-cap="Groups view"><img src="img/v233_students-and-groups-groups-tab.webp" alt="The GROUPS tab with the STUDENT GROUPS header, sort button, create row and two groups, Debate Club and Reading Group" loading="lazy"></span><figcaption><b>GROUPS</b> The create row and one card per group.</figcaption></figure>
       </div>
 
       <h3 id="groups-new">Creating a group</h3>
       <ol class="s">
-        <li>Go to the <span class="ui">GROUPS</span> view &mdash; or start from session creation, when it asks you to pick a group.</li>
+        <li>Go to the <span class="ui">GROUPS</span> tab. (If you&rsquo;re starting a session and have no groups yet, <span class="ui">Check Groups page</span> takes you there.)</li>
         <li>Tap <span class="ui">+ CREATE NEW STUDENT GROUP</span>.</li>
-        <li><strong>Name the group.</strong> The student list only appears once there is a name. Use something you&rsquo;ll recognise in a hurry, e.g. <em>Grade 6 &ndash; Reading &ndash; Tue/Thu</em>.</li>
-        <li>Select students from the school list. Use search or <span class="ui">Filter by Grades</span> to cut it down.</li>
-        <li>Tap <span class="ui">Save Group</span>. The counter in the button tells you how many are selected.</li>
+        <li><strong>Name the group.</strong> The student list only appears once there is a name (the screen says <em>1. Enter a group name to see the list of students.</em> and <em>2. Select students to enable Save button</em>). Use something you&rsquo;ll recognize in a hurry, e.g. <em>Grade 6 &ndash; Reading &ndash; Tue/Thu</em>.</li>
+        <li>Select students from the school list. Use search or <span class="ui">Filter by Grades</span> to cut it down. Each student you pick gets a highlighted border and the counter goes up by one. The <span class="ui">+</span> next to the filter adds a brand-new student.</li>
+        <li>Tap <span class="ui">Save Group</span>. The counter in the button tells you how many are selected. At <em>Save Group (0)</em> it does nothing. While saving it reads <em>Saving Group...</em>; then you&rsquo;re back on the GROUPS tab with the message <em>Student group saved successfully!</em></li>
       </ol>
       <div class="strip wide">
         <figure><span class="shot" data-cap="Create group &mdash; name first"><img src="img/p39_084.webp" alt="Create Student Group screen with an empty name field and a two step hint" loading="lazy"></span><figcaption><b>Name first</b> Then the student list appears.</figcaption></figure>
-        <figure><span class="shot" data-cap="Selecting students"><img src="img/p39_085.webp" alt="Create Student Group with four students selected and Save Group showing a count of four" loading="lazy"></span><figcaption><b>Select</b> Save Group (4).</figcaption></figure>
-        <figure><span class="shot" data-cap="Groups list"><img src="img/p39_086.webp" alt="Student groups list showing two saved groups" loading="lazy"></span><figcaption><b>Saved</b> Ready for roster sessions.</figcaption></figure>
+        <figure><span class="shot" data-cap="Selecting students"><img src="img/v233_students-and-groups-create-group.webp" alt="Creating the group Math Club with three students picked and Save Group showing a count of three" loading="lazy"></span><figcaption><b>Select</b> Save Group (3).</figcaption></figure>
       </div>
 
       <h3 id="groups-edit">Editing a group</h3>
       <ol class="s">
         <li>Open the <span class="ui">GROUPS</span> view.</li>
-        <li>Tap the group you want to change.</li>
+        <li>Tap the group you want to change. It opens <span class="ui">EDIT STUDENT GROUP</span> with the name, a member count and one row per member.</li>
         <li>Update the name, add students or remove them.</li>
         <li>Tap <span class="ui">Save</span>.</li>
       </ol>
@@ -1257,55 +1354,49 @@ footer p + p{margin-top:.4rem}
         <div><b>Edits apply going forward</b><p>Changes take effect the next time you use the group. Sessions that have already ended stay exactly as they were.</p></div>
       </div>
 
-      <h4 id="groups-existing">Adding students who are already on the roster</h4>
+      <h4 id="groups-existing">Adding students who are already in the school&rsquo;s list</h4>
       <ol class="s">
-        <li>Tap <span class="ui">+</span> to open <strong>Select Students</strong>.</li>
-        <li>Select one or more students and tap <span class="ui">Apply Changes</span>.</li>
+        <li>Tap <span class="ui">+</span> to open <strong>Select Students</strong>. The group&rsquo;s current members are already ticked.</li>
+        <li>Select one or more students and tap <span class="ui">Apply Changes</span>. The button shows the count, e.g. <em>Apply Changes (5)</em>, and does nothing at (0). The member list becomes exactly what you ticked, so unticking a current member removes them.</li>
         <li>Tap <span class="ui">Save</span> on the group.</li>
       </ol>
       <div class="note warn">
         <svg aria-hidden="true"><use href="#i-warn"/></svg>
-        <div><b>Apply is not Save</b><p><span class="ui">Apply Changes</span> only updates the edit in progress. Nothing is stored until you tap <span class="ui">Save</span> on the group itself &mdash; navigating away first loses the change.</p></div>
+        <div><b>Apply is not Save</b><p><span class="ui">Apply Changes</span> only updates the edit in progress. Nothing is stored until you tap <span class="ui">Save</span> on the group itself. If you&rsquo;ve changed the name or removed someone and go back first, the app asks <em>Looks like you have unsaved changes.</em> <em>Continue?</em> &mdash; <span class="ui">No</span> keeps you on the screen with your changes; <span class="ui">Yes</span> leaves and discards them.</p></div>
       </div>
 
       <h4 id="groups-newstudent">Adding a brand-new student</h4>
       <ol class="s">
         <li>From <strong>Select Students</strong>, tap <span class="ui">+</span> to add a student.</li>
-        <li>Enter their details and tap <span class="ui">Save</span>. This puts them on the school roster &mdash; not yet in the group.</li>
+        <li>Enter their details and tap <span class="ui">Save</span>. This puts them on the school&rsquo;s student list &mdash; not yet in the group.</li>
         <li>Find them in the Select Students list and select them.</li>
         <li>Tap <span class="ui">Apply Changes</span>, then <span class="ui">Save</span> the group.</li>
       </ol>
 
       <h4 id="groups-remove">Removing a student from a group</h4>
       <ol class="s">
-        <li>From group edit, open <strong>Select Students</strong>.</li>
-        <li>Long-press the student card and tap <span class="ui">Delete</span> &mdash; or simply deselect them, depending on your build.</li>
+        <li>On <span class="ui">EDIT STUDENT GROUP</span>, press and hold (or double-tap) the member&rsquo;s row to reveal its actions.</li>
+        <li>Tap the trash icon. A dialog titled <em>Remove Student</em> asks <em>Remove &hellip; from the group?</em> and reminds you <em>Changes won&rsquo;t be saved unless you press &ldquo;Save&rdquo;.</em></li>
+        <li>Tap <span class="ui">Yes</span> to take them off the list (<span class="ui">No</span> keeps them). The member count goes down by one.</li>
         <li>Tap <span class="ui">Save</span>.</li>
       </ol>
-      <p>Removing a student from a group does <strong>not</strong> remove them from the school roster.</p>
+      <p>You can also untick them in <span class="ui">SELECT STUDENTS</span> and tap <span class="ui">Apply Changes</span>.</p>
+      <p>Removing a student from a group does <strong>not</strong> remove them from the school&rsquo;s student list.</p>
       <div class="strip wide">
         <figure><span class="shot" data-cap="Edit group"><img src="img/p41_087.webp" alt="Edit Student Group screen listing four members of the group" loading="lazy"></span><figcaption><b>Edit</b> Rename, add, remove.</figcaption></figure>
-        <figure><span class="shot" data-cap="Select students"><img src="img/p41_088.webp" alt="Select Students screen with grade filter, search and selected students highlighted" loading="lazy"></span><figcaption><b>Select Students</b> Search and grade filter.</figcaption></figure>
-        <figure><span class="shot" data-cap="Add a new student here"><img src="img/p41_089.webp" alt="Add Student dialog opened from within Select Students" loading="lazy"></span><figcaption><b>New student</b> Added to the roster first.</figcaption></figure>
-        <figure><span class="shot" data-cap="New student selected"><img src="img/p41_090.webp" alt="Select Students showing the newly added student selected, Apply Changes reading five" loading="lazy"></span><figcaption><b>Then select</b> Apply Changes (5).</figcaption></figure>
         <figure><span class="shot" data-cap="Group saved"><img src="img/p41_091.webp" alt="Edit Student Group now listing five members" loading="lazy"></span><figcaption><b>Save</b> Five members.</figcaption></figure>
       </div>
 
       <h3 id="groups-delete">Deleting a group <span class="tag new">New</span></h3>
       <p>Groups can now be deleted outright &mdash; earlier versions only let you rename and re-use them.</p>
       <ol class="s">
-        <li>In the <span class="ui">GROUPS</span> view, long-press the group card. An open icon and a red trash icon slide in.</li>
-        <li>Tap the trash icon and confirm.</li>
-        <li>A confirmation appears: <em>Student group &ldquo;&hellip;&rdquo; deleted successfully!</em></li>
+        <li>In the <span class="ui">GROUPS</span> tab, press and hold the group card. A trash icon slides into view at the right end of the card.</li>
+        <li>Tap the trash icon. The group is deleted straight away &mdash; there&rsquo;s no &ldquo;are you sure?&rdquo; question and it can&rsquo;t be undone, so check you&rsquo;ve got the right card first.</li>
+        <li>A message appears: <em>Student group &ldquo;&hellip;&rdquo; deleted successfully!</em></li>
       </ol>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>Past sessions are safe</b><p>Deleting a group removes the saved set of names. Sessions already run with that group keep their attendance records.</p></div>
-      </div>
-      <div class="strip">
-        <figure><span class="shot" data-cap="Groups list"><img src="img/p42_092.webp" alt="Student groups list with two groups" loading="lazy"></span><figcaption><b>Long-press</b> Start on the group card.</figcaption></figure>
-        <figure><span class="shot" data-cap="Open and delete actions"><img src="img/p42_093.webp" alt="Group card slid open revealing an open icon and a red trash icon" loading="lazy"></span><figcaption><b>Actions</b> Open, or delete.</figcaption></figure>
-        <figure><span class="shot" data-cap="Group deleted"><img src="img/p42_094.webp" alt="Success banner reading student group deleted successfully" loading="lazy"></span><figcaption><b>Deleted</b> Confirmed by a banner.</figcaption></figure>
+        <div><b>Past sessions are safe</b><p>Deleting a group removes the saved set of names. Sessions already run with that group keep their attendance records. The students themselves stay in the assignment.</p></div>
       </div>
 
       <h3 id="groups-practice">Best practices</h3>
@@ -1314,43 +1405,54 @@ footer p + p{margin-top:.4rem}
         <li><strong>Descriptive names.</strong> Subject or level plus day or period, so the right group is obvious at a glance.</li>
         <li><strong>Consistent naming.</strong> Pick a convention &mdash; <em>Period 1 / Period 2</em>, or <em>A-Week / B-Week</em> &mdash; and stick to it.</li>
         <li><strong>Review monthly.</strong> Rename or delete groups you no longer use so the list stays short.</li>
-        <li><strong>Create in-flow.</strong> You can make a group from the session creation screen without abandoning your setup.</li>
+        <li><strong>Set groups up first.</strong> Make your groups on the GROUPS tab before you start a session. When you start one you can pick a group or <span class="ui">Continue Without a Group</span>, but not create one there.</li>
       </ul>
 
       <h3 id="groups-trouble">Troubleshooting</h3>
       <div class="faq">
-        <details class="q"><summary>I don&rsquo;t see Groups at all</summary><div class="q-body"><p>Make sure an assignment is selected, or that your filters match a roster-type program. Student Number programs have no groups.</p></div></details>
-        <details class="q"><summary>The + button is missing</summary><div class="q-body"><p>Your organisation may not allow educators to create students. Contact an administrator.</p></div></details>
-        <details class="q"><summary>My changes disappeared</summary><div class="q-body"><p>You almost certainly navigated away before tapping <span class="ui">Save</span>. Reopen the group and redo the change, saving at the end.</p></div></details>
+        <details class="q"><summary>I don&rsquo;t see Groups at all</summary><div class="q-body"><p>Open a class from your Assignments list. The GROUPS tab is often cut off at the right edge of the row of tabs &mdash; put your finger on the row and swipe left to bring it into view. In programs where you record how many students attended rather than each student by name, the tab reads <em>This view is not supported for the selected options.</em></p></div></details>
+        <details class="q"><summary>The + button is missing</summary><div class="q-body"><p>If the school has no students yet, the STUDENTS tab reads <em>No students found for this school.</em> and shows an <span class="ui">Add Student</span> button instead of <span class="ui">+</span>. Tap that.</p></div></details>
+        <details class="q"><summary>My changes disappeared</summary><div class="q-body"><p>You almost certainly navigated away before tapping <span class="ui">Save</span>. Reopen the group and redo the change, saving at the end. If you changed the name or removed someone, the app warns you first &mdash; tap <span class="ui">No</span> to stay and save.</p></div></details>
+        <details class="q"><summary>The screen vanished after I refreshed the browser</summary><div class="q-body"><p>Don&rsquo;t refresh the page while you&rsquo;re creating or editing a group, choosing students, or adding a student. A refresh loses that screen; go back into the assignment and start again.</p></div></details>
       </div>
     </div>
   </section>
-  <!-- ============================ 13 INBOX ============================ -->
+  <!-- ============================ 12 INBOX ============================ -->
   <section class="chapter" id="inbox">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">13</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">12</span><span class="ch-rule"></span></div>
       <h2>Inbox</h2>
-      <p class="lede">Messages from your organisation arrive in the Inbox tab rather than by email &mdash; schedule changes, reminders about unfinished sessions, program announcements.</p>
+      <p class="lede">Messages from your organization arrive in the Inbox tab rather than by email &mdash; schedule changes, reminders about unfinished sessions, program announcements.</p>
       <ul class="b">
-        <li><strong>Two tabs</strong> &mdash; <span class="ui">Unread</span> and <span class="ui">Read</span>, each with a count badge. Opening a message moves it across.</li>
-        <li><strong>Open a message</strong> &mdash; tap it to read the full text.</li>
-        <li><strong>Delete a message</strong> &mdash; use the delete action on the message row and confirm in the <span class="ui">Delete Message</span> dialog.</li>
+        <li><strong>Two tabs</strong> &mdash; <span class="ui">Unread</span> and <span class="ui">Read</span>, each with a count badge. A tab with no messages shows no count. Opening a message moves it across.</li>
+        <li><strong>Open a message</strong> &mdash; tap it. The <span class="ui">Message</span> screen shows the title, <span class="ui">From:</span> and the sender, how long ago it was sent, and the full text.</li>
+        <li><strong>Delete a message</strong> &mdash; tap the trash icon at the right end of its row. The <span class="ui">Delete Message</span> dialog names the message and warns <em>This cannot be undone.</em> Tap <span class="ui">Yes</span> to delete it or <span class="ui">No</span> to keep it. The trash icon sits close to where you tap to open a message, so tap carefully.</li>
         <li><strong>Scrolling</strong> &mdash; older messages load as you reach the bottom; the list ends with <em>No more messages</em>.</li>
-        <li><strong>Empty</strong> &mdash; an empty tab shows an inbox icon and a short line of text, not an error.</li>
+        <li><strong>Empty</strong> &mdash; an empty tab shows an inbox icon with <em>No unread messages</em> or <em>No read messages</em>. Pull down on the list to check for anything new.</li>
+        <li><strong>Unread count</strong> &mdash; while you have unread messages, a small number sits on the <span class="ui">Inbox</span> tab at the bottom of the screen. It goes down as you read them and disappears once everything is read.</li>
+        <li><strong>Reading the list</strong> &mdash; each row shows the sender&rsquo;s initials and name, a time and the message title. An unread message has a bold title and a <span class="ui">NEW</span> label. Times read like <code>09:30</code> (24-hour clock) for the last day, then <code>Yesterday</code>, then <code>3d</code>, then a date written day first: <code>7/4</code> means April 7, not July 4.</li>
+        <li><strong>Help</strong> &mdash; the <span class="ui">?</span> in the top-right corner opens a short <span class="ui">Inbox Overview</span>; tap <span class="ui">Close</span> to put it away.</li>
+        <li><span class="tag web">Web</span> Reloading the page while a message is open shows <em>Message not found</em>; go back to the Inbox and open it again.</li>
       </ul>
+      <div class="strip">
+        <figure><span class="shot" data-cap="Inbox, Unread tab"><img src="img/v233_messages-inbox-overview-actual.webp" alt="Inbox on the Unread tab with one message marked NEW from Program Office, and the number 1 on the Inbox tab at the bottom" loading="lazy"></span><figcaption><b>Unread</b> A new message, and the count on the Inbox tab.</figcaption></figure>
+        <figure><span class="shot" data-cap="Inbox, Read tab"><img src="img/v233_messages-unread-vs-read-rows-read.webp" alt="Inbox on the Read tab with one opened message in plain text and no NEW label" loading="lazy"></span><figcaption><b>Read</b> Opened messages move here.</figcaption></figure>
+        <figure><span class="shot" data-cap="Delete Message"><img src="img/v233_messages-delete-confirmation.webp" alt="Delete Message dialog naming the message, saying This cannot be undone, with No and Yes buttons" loading="lazy"></span><figcaption><b>Delete</b> Yes deletes it for good; No keeps it.</figcaption></figure>
+        <figure><span class="shot" data-cap="Empty Unread tab"><img src="img/v233_messages-empty-unread-actual.webp" alt="Inbox Unread tab with an inbox icon and the text No unread messages" loading="lazy"></span><figcaption><b>Empty</b> Nothing waiting &mdash; not an error.</figcaption></figure>
+      </div>
       <div class="note tip">
         <svg aria-hidden="true"><use href="#i-bulb"/></svg>
-        <div><b>Check it at the start of your day</b><p>Sessions lock 24 hours after creation, and the Inbox is where reminders about incomplete sessions land &mdash; a quick look before your first session is usually enough.</p></div>
+        <div><b>Check it at the start of your day</b><p>A session stays open for about 24 hours. If anything it needs is still missing when the time runs out, it locks, and the Inbox is where reminders about unfinished sessions land &mdash; a quick look before your first session is usually enough.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 14 EDUCATOR PROFILE ============================ -->
+  <!-- ============================ 13 EDUCATOR PROFILE ============================ -->
   <section class="chapter" id="educator">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">14</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">13</span><span class="ch-rule"></span></div>
       <h2>Your profile &amp; settings</h2>
-      <p class="lede">The Profile tab holds your own record, your password, the app version you&rsquo;re running, and the way out.</p>
+      <p class="lede">The Profile tab holds your own record, your settings, your password, the app version you&rsquo;re running, help, and the way out.</p>
       <figure class="video" data-vid="1129864939" data-title="Educator profile" data-dur="0:20">
         <button type="button" class="v-play" aria-label="Play the Educator profile walkthrough, 20 seconds">
           <span class="v-ring" aria-hidden="true"><svg><use href="#i-tri"/></svg></span>
@@ -1366,41 +1468,51 @@ footer p + p{margin-top:.4rem}
       </figure>
 
       <h3 id="educator-info">Profile information</h3>
-      <p>Your name, educator ID, email and phone number are shown here. They can only be changed by an administrator &mdash; if something is wrong, ask them or write to support.</p>
-      <p>The <strong>version number</strong> at the bottom of this screen is the first thing support will ask for.</p>
+      <p>Your name, educator ID, email and phone number are shown here. They can only be changed by an administrator &mdash; if something is wrong, ask them or write to support. If your email or phone number is missing from your account, that row reads <em>Unknown</em>.</p>
+      <p>The <strong>version number</strong> (for example <em>Version: 2.3.3</em>) sits just above <span class="ui">Change Password</span> and <span class="ui">Log out</span>; the Login screen shows the same line. It&rsquo;s the first thing support will ask for.</p>
+      <div class="note tip">
+        <svg aria-hidden="true"><use href="#i-bulb"/></svg>
+        <div><b>Can&rsquo;t see Log out?</b><p>On a small screen or with large text, the panel holding <span class="ui">Change Password</span> and <span class="ui">Log out</span> can sit partly behind the tabs at the bottom. Scroll down to see all of it.</p></div>
+      </div>
 
       <h3 id="educator-password">Changing your password</h3>
       <ol class="s">
         <li>Tap <span class="ui">Change Password</span>.</li>
-        <li>Enter and confirm your new password.</li>
-        <li>Tap <span class="ui">Save Changes</span>.</li>
+        <li>Type your new password in <span class="ui">Enter new password</span> and again in <span class="ui">Confirm password</span>. Tap the eye icon in a box to show what you typed.</li>
+        <li>Tap <span class="ui">Save Changes</span>. You&rsquo;re returned to your Profile and a message reads <em>Password changed successfully</em>.</li>
       </ol>
+      <p>Your new password needs at least 8 characters, including an uppercase letter, a number and a special character such as <code>!</code>. If something is missing, a line under the box says what &mdash; for example <em>Password must contain at least one number</em> or <em>Passwords don&rsquo;t match</em> &mdash; and nothing changes until it&rsquo;s fixed. You don&rsquo;t need your old password.</p>
 
       <h3 id="educator-settings">Settings <span class="tag new">New</span></h3>
-      <p>Tap the gear icon on the Profile screen.</p>
+      <p>Tap the gear icon at the top right of your details on the Profile screen.</p>
       <div class="tablewrap">
         <table>
           <thead><tr><th>Section</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td><strong>Appearance</strong></td><td>Choose <span class="ui">Light</span>, <span class="ui">Dark</span> or <span class="ui">System</span>. System follows your device setting.</td></tr>
-            <tr><td><strong>Downloads</strong></td><td>Shows how many assessment PDFs are stored on the device and how much space they use. <span class="ui">Delete and free&hellip;</span> clears them; documents re-download when you next open them.</td></tr>
-            <tr><td><strong>Documentation</strong></td><td><span class="ui">Flows Docs</span> &mdash; in-app documentation for each session flow. Only visible to accounts with permission for it.</td></tr>
+            <tr><td><strong>Appearance</strong></td><td>Choose <span class="ui">Light</span>, <span class="ui">Dark</span> or <span class="ui">System</span>. System follows your device setting. The one in use has a tick in its circle. The app changes straight away and remembers your choice.</td></tr>
+            <tr><td><strong>Downloads</strong></td><td>Shows how many assessment PDFs are stored on the device and how much space they use. <span class="ui">Delete and free&hellip;</span> deletes them all at once, without asking first; documents download again when you next open them. With none stored it reads <em>Downloads folder is empty</em>. <span class="tag web">Web</span> Nothing is stored in the browser, so this always reads empty.</td></tr>
           </tbody>
         </table>
       </div>
 
       <h3 id="educator-logout">Logging out</h3>
-      <p>Tap <span class="ui">Log out</span> to return to the Login screen. If <span class="ui">Remember me</span> was ticked, your email address stays filled in.</p>
+      <p>Tap <span class="ui">Log out</span>. You&rsquo;re signed out straight away, with no confirmation, and back on the Login screen. If <span class="ui">Remember me</span> was checked, your email address is filled in; your password is not.</p>
+      <div class="note warn">
+        <svg aria-hidden="true"><use href="#i-warn"/></svg>
+        <div><b>On a shared device, always log out</b><p>Closing the app does not sign you out &mdash; Presentify keeps you signed in between uses, so the next person to open it would land in your account.</p></div>
+      </div>
       <div class="strip">
-        <figure><span class="shot" data-cap="Profile screen"><img src="img/p45_097.webp" alt="Educator profile screen with name, ID, email, AI Assistant button, version, Change Password and Log out" loading="lazy"></span><figcaption><b>Profile</b> Details, AI Assistant, version, password, logout.</figcaption></figure>
+        <figure><span class="shot" data-cap="Profile screen"><img src="img/v233_profile-and-settings-profile-screen.webp" alt="Educator profile screen with name, educator ID, email, phone, settings gear, AI Assistant button, support address, version, Change Password and Log out" loading="lazy"></span><figcaption><b>Profile</b> Details, settings gear, AI Assistant, version, password, logout.</figcaption></figure>
+        <figure><span class="shot" data-cap="Settings"><img src="img/v233_profile-and-settings-appearance.webp" alt="Settings screen with Appearance options Light, Dark and System, and a Downloads section reading Found 1 downloaded PDF file(s) with a Delete and free 142 KB button" loading="lazy"></span><figcaption><b>Settings</b> Appearance and Downloads.</figcaption></figure>
+        <figure><span class="shot" data-cap="Change Password"><img src="img/v233_profile-and-settings-change-password.webp" alt="Change Password screen with two password boxes, the message Passwords don&rsquo;t match under the second, and a Save Changes button" loading="lazy"></span><figcaption><b>Change Password</b> The boxes must match.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 15 SMARTIE ============================ -->
+  <!-- ============================ 14 SMARTIE ============================ -->
   <section class="chapter" id="smartie">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">15</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">14</span><span class="ch-rule"></span></div>
       <h2>Smartie, the in-app assistant</h2>
       <p class="lede">Smartie answers questions about using Presentify. Tap <span class="ui">AI Assistant</span> on your Profile screen to open the chat.</p>
       <ul class="b">
@@ -1414,15 +1526,14 @@ footer p + p{margin-top:.4rem}
       </div>
       <div class="strip">
         <figure><span class="shot" data-cap="Smartie connected"><img src="img/p45_098.webp" alt="Presentify Assistant Smartie chat screen with a greeting message" loading="lazy"></span><figcaption><b>Opening</b> Connected, with a greeting.</figcaption></figure>
-        <figure><span class="shot" data-cap="Smartie answering"><img src="img/p45_099.webp" alt="Smartie answering a question about creating a student group with numbered steps" loading="lazy"></span><figcaption><b>An answer</b> Step-by-step, from the guide.</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <!-- ============================ 16 SUPPORT ============================ -->
+  <!-- ============================ 15 SUPPORT ============================ -->
   <section class="chapter" id="support">
     <div class="wrap">
-      <div class="ch-head"><span class="ch-num">16</span><span class="ch-rule"></span></div>
+      <div class="ch-head"><span class="ch-num">15</span><span class="ch-rule"></span></div>
       <h2>Support</h2>
       <div class="quicklinks" style="margin-top:1.4rem">
         <a href="https://presentify.xyz/" target="_blank" rel="noopener"><b>presentify.xyz</b><span>App store links, user guide, terms, privacy policy</span></a>
@@ -1431,20 +1542,23 @@ footer p + p{margin-top:.4rem}
       <h3 id="support-inapp">Reaching support from inside the app</h3>
       <p>The support address appears on two screens: the <span class="ui">Login</span> screen and your <span class="ui">Profile</span> screen.</p>
       <ul class="b">
-        <li><strong>Tap</strong> the address &mdash; it&rsquo;s copied to your clipboard.</li>
-        <li><strong>Long-press</strong> &mdash; your default email app opens, if one is set up on the device.</li>
+        <li><strong>Tap</strong> the address &mdash; it&rsquo;s copied, and a message confirms it.</li>
+        <li><strong>Press and hold</strong> &mdash; your email app opens a new message with the subject already filled in (your educator ID followed by <em>Support Required</em>). If no email app is set up, you&rsquo;ll see <em>Could not open email app</em>; tap the address to copy it instead.</li>
       </ul>
+      <p>Most screens also have a <span class="ui">?</span> help button in the top-right corner of the title bar, which opens a short explanation of that screen.</p>
       <h3 id="support-what">What to include</h3>
-      <p>These four things resolve most tickets in one reply:</p>
+      <p>These five things resolve most tickets in one reply:</p>
       <ul class="b">
         <li>The <strong>app version</strong> from the Login or Profile screen, and whether you&rsquo;re on web, iOS or Android.</li>
-        <li>The <strong>session code</strong> (e.g. <code>SCXN9825</code>) or the student ID involved.</li>
+        <li>The <strong>session code</strong> shown at the top of the session screen (e.g. <code>SCPJ1461</code>) or the student ID involved.</li>
+        <li><strong>Roughly what time</strong> it happened &mdash; it helps support find the right records.</li>
         <li>What you expected to happen, and what happened instead.</li>
         <li>A screenshot, if there&rsquo;s anything to see.</li>
       </ul>
+      <p><strong>Connection error.</strong> A banner reading <em>Connection error. Please check your internet connection or server.</em> means the app couldn&rsquo;t reach Presentify. Your unsaved work stays on screen &mdash; save again once you&rsquo;re back online.</p>
       <div class="note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
-        <div><b>Support can do things the app can&rsquo;t</b><p>Duplicate students, duplicate sessions and locked sessions that need reopening all have to be handled by support &mdash; there&rsquo;s no educator-side action for them.</p></div>
+        <div><b>Some fixes need someone else</b><p>Duplicate students, and duplicate sessions that have already ended or locked, can&rsquo;t be removed from the app &mdash; contact support. A session that is still open can be deleted from its card (see <a href="#faq">FAQ</a>). If a session closed before you finished, an administrator can reopen it; ask whoever manages Presentify for your program, or write to support.</p></div>
       </div>
     </div>
   </section>
@@ -1464,31 +1578,31 @@ footer p + p{margin-top:.4rem}
         </div></details>
 
         <details class="q"><summary>Where do I find my assignments?</summary><div class="q-body">
-          <p>On the <a href="#assignments">Assignments</a> screen, which opens straight after you log in. It shows the seven assignments nearest today; tap <span class="ui">Show All</span> for the rest.</p>
+          <p>On the <a href="#assignments">Assignments</a> screen, which opens straight after you log in. It starts with a shorter list of the assignments nearest today; tap <span class="ui">Show All</span> for the rest.</p>
         </div></details>
 
         <details class="q"><summary>I didn&rsquo;t get a password reset email</summary><div class="q-body">
-          <p>Check your Spam or Junk folder first. If it isn&rsquo;t there, wait a few minutes and request the reset again.</p>
+          <p>Check your Spam or Junk folder first. If nothing has arrived after a few minutes, make sure you typed the email address your account actually uses, then request the reset again &mdash; or contact whoever set up your account.</p>
         </div></details>
 
         <details class="q"><summary>I marked a student present but completion still shows 0%</summary><div class="q-body">
-          <p>Marking someone present isn&rsquo;t enough. You also need <strong>time in</strong>, <strong>time out</strong> and <strong>subject</strong> saved for that student. Until all three are stored, they don&rsquo;t count toward completion &mdash; see <a href="#attendance">Attendance details</a>.</p>
+          <p>Marking someone present isn&rsquo;t enough. Everything your program asks for has to be saved for that student &mdash; often time in, time out and a subject, sometimes a teacher. Until it&rsquo;s saved, they don&rsquo;t count toward completion &mdash; see <a href="#attendance">Attendance details</a>.</p>
         </div></details>
 
         <details class="q"><summary>I can open a session but can&rsquo;t change anything</summary><div class="q-body">
-          <p>It&rsquo;s locked. Sessions lock automatically 24 hours after creation if the required data wasn&rsquo;t entered, at whatever completion percentage they had reached. Locked sessions are read-only; contact support if one needs reopening.</p>
+          <p>It has closed. A session stays open for about 24 hours &mdash; its card counts down, e.g. <code>OPEN: 04:32:10</code> is four and a half hours left. When time runs out it moves to <span class="ui">Ended</span> if everything needed was filled in, or to <span class="ui">Locked</span> if it wasn&rsquo;t, at whatever completion it had reached. Both are read-only. If one needs reopening, an administrator can do it &mdash; ask whoever manages Presentify for your program, or contact support.</p>
         </div></details>
 
         <details class="q"><summary>How do I delete a duplicate student?</summary><div class="q-body">
           <ul class="b">
-            <li>There&rsquo;s no way to remove a student from a school roster yourself.</li>
+            <li>There&rsquo;s no way to remove a student from the school&rsquo;s student list yourself.</li>
             <li>You can remove them from a <a href="#groups-remove">student group</a>, which keeps them out of your sessions.</li>
-            <li>For the roster itself, contact support.</li>
+            <li>For the school&rsquo;s student list itself, contact support.</li>
           </ul>
         </div></details>
 
         <details class="q"><summary>How do I delete a duplicate session?</summary><div class="q-body">
-          <p><span class="tag chg">Updated</span> An <span class="chip opened">Opened</span> session can now be deleted from the app &mdash; tap the trash icon on its card in the <span class="ui">Open</span> tab and confirm. Locked and Ended sessions still need support.</p>
+          <p><span class="tag chg">Updated</span> An <span class="chip opened">Open</span> session can now be deleted from the app &mdash; tap the trash icon on its card in the <span class="ui">Open</span> tab and confirm. Locked and Ended sessions still need support.</p>
         </div></details>
 
         <details class="q"><summary>How do I rename a student group?</summary><div class="q-body">
@@ -1496,13 +1610,13 @@ footer p + p{margin-top:.4rem}
         </div></details>
 
         <details class="q"><summary>How do I delete a student group?</summary><div class="q-body">
-          <p><span class="tag chg">Updated</span> Groups can now be deleted: long-press the group card in the <span class="ui">GROUPS</span> view and tap the red trash icon. Sessions already run with that group keep their records. See <a href="#groups-delete">Deleting a group</a>.</p>
+          <p><span class="tag chg">Updated</span> Groups can now be deleted: long-press the group card in the <span class="ui">GROUPS</span> view and tap the trash icon. There&rsquo;s no confirmation and it can&rsquo;t be undone. Sessions already run with that group keep their records. See <a href="#groups-delete">Deleting a group</a>.</p>
         </div></details>
 
         <details class="q"><summary>How can I tell which students I&rsquo;ve already entered assessments for?</summary><div class="q-body">
           <ul class="b">
             <li><strong>From the student&rsquo;s profile</strong> &mdash; open the <span class="ui">Assessments</span> tab; everything already recorded is listed there.</li>
-            <li><strong>While assigning</strong> &mdash; in an open session, tap a present student, pick a subject to load the bank list, and look for <strong>green-labelled banks</strong>. Green means this student already has assessments from that bank.</li>
+            <li><strong>While assigning</strong> &mdash; in an open session, tap a present student, pick a subject to load the bank list, and look for <strong>banks with a filled title bar</strong>. A filled title bar means this student already has assessments from that bank.</li>
           </ul>
         </div></details>
 
@@ -1511,7 +1625,7 @@ footer p + p{margin-top:.4rem}
         </div></details>
 
         <details class="q"><summary>Can I use Presentify on a computer?</summary><div class="q-body">
-          <p>Yes. The web app has the same features as mobile. The one difference: instead of installing an update, you <a href="#login-update">hard reload</a> the page when prompted.</p>
+          <p>Yes. The web app covers the same everyday work as the phone app. A few things differ: assessment documents open in a new browser tab instead of inside the app, nothing is downloaded to the computer, and instead of installing an update you <a href="#login-update">hard reload</a> the page when prompted.</p>
         </div></details>
       </div>
     </div>
@@ -1522,21 +1636,42 @@ footer p + p{margin-top:.4rem}
     <div class="wrap">
       <div class="ch-head"><span class="ch-num">LOG</span><span class="ch-rule"></span></div>
       <h2>What&rsquo;s new</h2>
-      <p class="lede">Educator-facing changes since version 2.1.9, which the previous edition of this guide described. Fixes and internal work are left out.</p>
+      <p class="lede">Educator-facing changes since version 2.1.9, which the previous edition of this guide described, taken from the app-store release notes. Internal work is left out.</p>
       <div class="log">
+        <div>
+          <span class="v">2.3.3</span>
+          <ul class="b">
+            <li><strong>Session reflection per grade</strong> (in some programs) on the <span class="ui">CREATE SESSION</span> screen, using that grade&rsquo;s focus standards &mdash; see <a href="#reflections">Session reflections</a>.</li>
+            <li><strong>Absence reasons</strong> for absent students in most programs, including <span class="ui">Other</span> with your own text.</li>
+            <li><strong>Progress checks</strong> show the skills they cover, when you open one and on the student profile.</li>
+            <li>A save that fails now stays on screen and says so, instead of reporting success.</li>
+            <li>Leaving with unsaved attendance changes now warns you first, on every device.</li>
+            <li>Assignment status now follows the school&rsquo;s local time.</li>
+          </ul>
+        </div>
+        <div>
+          <span class="v">2.3.1</span>
+          <ul class="b">
+            <li><strong>Light theme</strong>, with a switcher under the gear icon on your Profile screen &mdash; see <a href="#educator-settings">Settings</a>.</li>
+            <li><strong>Assignment cards show their status</strong>, and <span class="ui">Show All</span> adds status filters &mdash; see <a href="#assignments-flags">Reading the flags</a>.</li>
+            <li><strong>Surveys are separate from assessments</strong>, with their own <span class="ui">Surveys</span> tab on the student profile.</li>
+            <li>Student profile: a <span class="ui">Progress</span> tab, a grade filter, and editing a student&rsquo;s grade.</li>
+            <li>The <strong>Filters tab was removed</strong>: open an assignment to reach its sessions, students and groups. The tabs at the bottom of the screen are now Assignments, Inbox and Profile.</li>
+          </ul>
+        </div>
         <div>
           <span class="v">2.2.13</span>
           <ul class="b">
             <li><strong>Multiple session reflections</strong> per student per session.</li>
             <li><strong>Progressive loading</strong> in the assignments list.</li>
-            <li>Improved focus standards listing in roster details.</li>
+            <li>Improved focus standards listing in attendance details.</li>
           </ul>
         </div>
         <div>
           <span class="v">2.2.7 &ndash; 2.2.9</span>
           <ul class="b">
             <li><strong>Assessment banks filtered by state</strong>, so lists are shorter and more relevant.</li>
-            <li><strong>Subject topics</strong> became part of session reflections.</li>
+            <li><strong>Subject topics</strong> became part of session reflections. <em>(Topic and Rating are now separate boxes on Attendance Details.)</em></li>
           </ul>
         </div>
         <div>
@@ -1556,8 +1691,8 @@ footer p + p{margin-top:.4rem}
           <span class="v">2.1.27 &ndash; 2.2.1</span>
           <ul class="b">
             <li><strong>New session time picker.</strong></li>
-            <li>Main filters reworked to <em>district &rarr; school &rarr; program</em>.</li>
-            <li>Locked Student Number sessions can no longer be edited.</li>
+            <li>Main filters reworked to <em>district &rarr; school &rarr; program</em>. <em>(The Filters tab was later removed; assignments are now the way in.)</em></li>
+            <li>Locked sessions where you enter a number of students can no longer be edited.</li>
             <li><span class="tag web">Web</span> Press <kbd>Enter</kbd> to submit the login form; browser back button behaves correctly.</li>
             <li><span class="ui">Other</span> now sits at the end of the subject list.</li>
           </ul>
@@ -1569,19 +1704,19 @@ footer p + p{margin-top:.4rem}
             <li><strong>Progressive loading</strong> for assessment banks.</li>
             <li>Scores support decimals.</li>
             <li>Surveys renamed <strong>Student Subject Comfort Surveys</strong>.</li>
-            <li><span class="ui">Add Assessment</span> is hidden on roster flows where the partner has assessments switched off.</li>
+            <li><span class="ui">Add Assessment</span> is hidden in programs that have assessments switched off.</li>
           </ul>
         </div>
       </div>
       <div class="note newbox" style="margin-top:1.6rem">
         <svg aria-hidden="true"><use href="#i-spark"/></svg>
-        <div><b>Coming: Progress Checks</b> <span class="tag beta">Preview</span><p>A <span class="ui">Progress</span> tab on the student profile with short auto-graded questionnaires &mdash; four questions, four options each, up to three attempts per student per check, with the score calculated for you. It may not be in your build yet; this handbook will be updated when it ships.</p></div>
+        <div><b>Progress Checks</b> <span class="tag new">New in 2.3.1</span><p>A <span class="ui">Progress</span> tab on the student profile with short questionnaires. Some questions take one answer, some take several; each student gets up to three attempts per check. Most are scored for you; on some you mark each answer yourself.</p></div>
       </div>
     </div>
   </section>
 
   <footer class="wrap">
-    <p><strong>Presentify Educator Handbook</strong> &middot; covers app version 2.3 &middot; <a href="https://presentify.xyz/" target="_blank" rel="noopener">presentify.xyz</a></p>
+    <p><strong>Presentify Educator Handbook</strong> &middot; covers app version 2.3.3 &middot; <a href="https://presentify.xyz/" target="_blank" rel="noopener">presentify.xyz</a></p>
     <p>Questions this handbook doesn&rsquo;t answer: <a href="mailto:support@presentify.xyz">support@presentify.xyz</a>. The version in your app store may differ from the one described here.</p>
   </footer>
 </main>
